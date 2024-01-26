@@ -5,7 +5,8 @@
         "Web",
         "AWS",
         "Fundamentals",
-        "Framework"
+        "Framework",
+        "Database"
     ],
     "tags": [
         {
@@ -76,6 +77,21 @@
         {
             "name": "REST API",
             "type": "Web",
+            "colour": "#FF9900"
+        },
+        {
+            "name": "MariaDb",
+            "type": "Database",
+            "colour": "#FF9900"
+        },
+        {
+            "name": "PostgreSQL",
+            "type": "Database",
+            "colour": "#FF9900"
+        },
+        {
+            "name": "AWS Lambda",
+            "type": "AWS",
             "colour": "#FF9900"
         }
     ]
