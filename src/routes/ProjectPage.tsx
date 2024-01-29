@@ -4,7 +4,7 @@ import Navbar from "../components/Navbar/Navbar";
 import { ProjectType } from "../types";
 
 const ProjectPage: FC = () => {
-    const { type, project } = useParams();
+    const { type, projectId } = useParams();
 
     // ensure type route parameter is valid
     if (ProjectType.Courseworks !== type &&
@@ -16,7 +16,7 @@ const ProjectPage: FC = () => {
     return (
         <div>
             <Navbar />
-            <h1>{ project }</h1>
+            <h1>{ projectId }</h1>
         </div>
     );
 };

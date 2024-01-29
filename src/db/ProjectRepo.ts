@@ -1,16 +1,16 @@
-import { InitialState } from "../types";
+import { InitialState, ProjectState, ProjectType } from "../types";
 
 class ProjectRepo {
     private static _instance: ProjectRepo | null = null;
 
-    public getInstance = (): ProjectRepo => {
+    public static getInstance = (): ProjectRepo => {
         if (!ProjectRepo._instance) {
             ProjectRepo._instance = new ProjectRepo();
         }
         return ProjectRepo._instance;
     }
 
-    state: InitialState = {
+    private state: InitialState = {
         tagTypes: [
             "Programming Language",
             "Cloud",
@@ -20,12 +20,13 @@ class ProjectRepo {
             "Framework"
         ],
         projectTypes: [
-            "coursework",
+            "courseworks",
             "projects",
-            "experience"
+            "experiences"
         ],
         projects: [
             {
+                id: "example-coursework",
                 name: "Example Coursework",
                 tags: [
                     {
@@ -34,9 +35,10 @@ class ProjectRepo {
                         colour: "#FF9900"
                     }
                 ],
-                type: "coursework"
+                type: "courseworks"
             },
             {
+                id: "example-work-experience",
                 name: "Example Work Experience",
                 tags: [
                     {
@@ -55,9 +57,10 @@ class ProjectRepo {
                         colour: "#FF9900",
                     }
                 ],
-                type: "experience"
+                type: "experiences"
             },
             {
+                id: "example-personal-project",
                 name: "Example Personal Project",
                 tags: [
                     {
@@ -71,10 +74,14 @@ class ProjectRepo {
                         colour: "0022FF"
                     }
                 ],
-                type: "project"
+                type: "projects"
             },
         ]
     };
+
+    public getOfType = (type: ProjectType): ProjectState[] => {
+        return this.state.projects.filter(proj => proj.type === type);
+    }
 }
 
 export default ProjectRepo;

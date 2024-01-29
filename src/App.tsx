@@ -6,6 +6,7 @@ import Projects from "./routes/Projects";
 import Courseworks from "./routes/Courseworks";
 import ProjectPage from "./routes/ProjectPage";
 import { ProjectType } from "./types";
+import Dev from "./routes/Dev";
 
 const App: FC = () => {
     return (
@@ -15,6 +16,7 @@ const App: FC = () => {
                 <Route path={`/${ProjectType.Experiences}`} element={<Experiences />} />
                 <Route path={`/${ProjectType.Projects}`} element={<Projects />} />
                 <Route path={`/${ProjectType.Courseworks}`} element={<Courseworks />} />
+                <Route path="/dev" element={<Dev />} />
                 <Route path="/dev/:type/:project" element={<ProjectPage />} />
             </Routes>
         </Router>

@@ -1,15 +1,17 @@
-import { FC, useEffect, useState } from "react";
-import { ProjectType } from "../../types";
+import { FC, useState } from "react";
+import { ProjectState, ProjectType } from "../../types";
+import ProjectRepo from "../../db/ProjectRepo";
+import ProjectLink from "../ProjectLink/ProjectLink";
 
 interface ProjectListProps {
     type: ProjectType
 }
 
 const ProjectList: FC<ProjectListProps> = ({ type }: ProjectListProps) => {
-    // TODO: implement project listing based on JSON data
+    const [projects] = useState<ProjectState[]>(ProjectRepo.getInstance().getOfType(type));
     return (
         <div>
-            <span>ProjectList</span>
+            { projects.map(proj => <ProjectLink project={ proj } />) }
         </div>
     );
 };

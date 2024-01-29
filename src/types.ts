@@ -12,6 +12,7 @@ export interface InitialState {
 }
 
 export interface ProjectState {
+    id: string;
     name: string;
     tags: TagState[];
     type: string;

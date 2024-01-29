@@ -1,10 +1,10 @@
 import { FC} from "react";
 import { ProjectType } from "../../types";
 
-const Dev: FC = () => {
+const Sections: FC = () => {
     return (
-        <div id="dev">
-            <h1>Dev</h1>
+        <div id="sections">
+            <h1>Sections</h1>
             <ul>
                 <li><a href={`/${ProjectType.Experiences}`}>Work Experiences</a></li>
                 <li><a href={`/${ProjectType.Projects}`}>Personal Projects and Certifications</a></li>
@@ -14,4 +14,4 @@ const Dev: FC = () => {
     );
 };
 
-export default Dev;
+export default Sections;
