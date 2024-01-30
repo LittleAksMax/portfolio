@@ -90,8 +90,13 @@
             "colour": "#FF9900"
         },
         {
-            "name": "AWS Lambda",
-            "type": "AWS",
+            "name": "AWS",
+            "type": "Cloud",
+            "colour": "#FF9900"
+        },
+        {
+            "name": "PyQt5",
+            "type": "Framework",
             "colour": "#FF9900"
         }
     ]

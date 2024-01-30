@@ -11,7 +11,11 @@ const ProjectList: FC<ProjectListProps> = ({ type }: ProjectListProps) => {
     const [projects] = useState<ProjectState[]>(ProjectRepo.getInstance().getOfType(type));
     return (
         <div>
-            { projects.map(proj => <ProjectLink project={ proj } />) }
+            { projects.map(proj =>
+                <ProjectLink
+                    key={`${proj.id}-projlisting`}
+                    project={ proj }
+                />) }
         </div>
     );
 };

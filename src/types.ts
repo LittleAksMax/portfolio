@@ -6,9 +6,13 @@ export enum ProjectType {
 }
 
 export interface InitialState {
-    tagTypes: string[];
     projectTypes: string[];
-    projects: ProjectState[];
+    entries: ProjectState[];
+}
+
+export interface TagsAvailable {
+    types: string[];
+    tags: TagState[];
 }
 
 export interface ProjectState {

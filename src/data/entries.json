@@ -1,11 +1,40 @@
 {
-    "courseworks": [
-
+    "types": [
+        "courseworks",
+        "projects",
+        "experiences"
     ],
-    "projects": [
-        
-    ],
-    "experiences": [
-        
+    "entries": [
+        {
+            "id": "bespoke-inventory-manager",
+            "name": "Bespoke Inventory Management System",
+            "tags": [
+                "C#",
+                "ASP.NET Core",
+                "TS",
+                "React",
+                "MariaDb"
+            ],
+            "type": "courseworks"
+        },
+        {
+            "id": "aws-fundamentals-csharp",
+            "name": "Nick Chapsas AWS Fundamentals with C#",
+            "tags": [
+                "AWS",
+                "C#"
+            ],
+            "type": "projects"
+        },
+        {
+            "id": "greenpyrus-ltd",
+            "name": "Part-time Junior Software Developer at GreenPyrus Ltd.",
+            "tags": [
+                "Python",
+                "MariaDb",
+                "PyQt5"
+            ],
+            "type": "experiences"
+        }
     ]
 }

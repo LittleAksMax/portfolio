@@ -17,7 +17,7 @@ const App: FC = () => {
                 <Route path={`/${ProjectType.Projects}`} element={<Projects />} />
                 <Route path={`/${ProjectType.Courseworks}`} element={<Courseworks />} />
                 <Route path="/dev" element={<Dev />} />
-                <Route path="/dev/:type/:project" element={<ProjectPage />} />
+                <Route path="/dev/:type/:projectId" element={<ProjectPage />} />
             </Routes>
         </Router>
     );
