@@ -21,7 +21,6 @@ const ProjectPage: FC = () => {
         return <NotFound />
     }
 
-    // TODO: access and GitHub URLs in entry
     return (
         <div>
             <Navbar />

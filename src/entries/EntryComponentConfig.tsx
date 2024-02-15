@@ -1,4 +1,4 @@
-import AwsFundamentalsCsharp from "./aws-fundamentals-csharp";
+import AwsFundamentalsCsharp from "./AwsFundamentalsCsharp";
 
 const EntriesMap = {
     "aws-fundamentals-csharp": <AwsFundamentalsCsharp />
