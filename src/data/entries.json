@@ -6,25 +6,15 @@
     ],
     "entries": [
         {
-            "id": "bespoke-inventory-manager",
-            "name": "Bespoke Inventory Management System",
-            "tags": [
-                "C#",
-                "ASP.NET Core",
-                "TS",
-                "React",
-                "MariaDb"
-            ],
-            "type": "courseworks"
-        },
-        {
             "id": "aws-fundamentals-csharp",
             "name": "Nick Chapsas AWS Fundamentals with C#",
             "tags": [
                 "AWS",
                 "C#"
             ],
-            "type": "projects"
+            "type": "projects",
+            "access": null,
+            "source": null
         },
         {
             "id": "greenpyrus-ltd",
@@ -34,7 +24,9 @@
                 "MariaDb",
                 "PyQt5"
             ],
-            "type": "experiences"
+            "type": "experiences",
+            "access": null,
+            "source": null
         }
     ]
 }

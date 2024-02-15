@@ -7,6 +7,7 @@ import Courseworks from "./routes/Courseworks";
 import ProjectPage from "./routes/ProjectPage";
 import { ProjectType } from "./types";
 import Dev from "./routes/Dev";
+import NotFound from "./components/Status/NotFound";
 
 const App: FC = () => {
     return (
@@ -18,6 +19,8 @@ const App: FC = () => {
                 <Route path={`/${ProjectType.Courseworks}`} element={<Courseworks />} />
                 <Route path="/dev" element={<Dev />} />
                 <Route path="/dev/:type/:projectId" element={<ProjectPage />} />
+
+                <Route path="*" element={<NotFound />} />
             </Routes>
         </Router>
     );

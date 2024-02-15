@@ -20,6 +20,8 @@ export interface ProjectState {
     name: string;
     tags: TagState[];
     type: string;
+    access: string | null;
+    source: string | null;
 }
 
 export interface TagState {

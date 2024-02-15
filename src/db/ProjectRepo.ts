@@ -34,6 +34,8 @@ class ProjectRepo {
                     this.tags.tags
                         .filter(tagState => tagState.name === tagName)[0]),
             type: entry["type"],
+            source: entry["source"],
+            access: entry["access"]
         }))
     };
 
