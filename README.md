@@ -1,6 +1,3 @@
 # Portfolio
 
-- [ ] About
-- [ ] Contact
-- [ ] Project List display using JSON data
-- [ ] Project display using JSON data
+- [ ] Remove separate tag colour attribute (colour should be based on type)

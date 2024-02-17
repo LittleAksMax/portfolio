@@ -5,13 +5,11 @@ import { ProjectType } from "../types";
 import NotFound from "../components/Status/NotFound";
 import ProjectBanner from "../components/ProjectBanner/ProjectBanner";
 import EntriesMap from "../entries/EntryComponentConfig";
+import ProjectRepo from "../db/ProjectRepo";
 
 const ProjectPage: FC = () => {
     const { type, projectId } = useParams();
-
-    // Figure how to import pure HTML into React with:
-    // https://stackoverflow.com/questions/50792942/how-to-import-html-file-into-react-component-and-use-it-as-a-component
-
+    
     // ensure type route parameter is valid
     if ((ProjectType.Courseworks !== type &&
         ProjectType.Experiences !== type &&
@@ -20,11 +18,23 @@ const ProjectPage: FC = () => {
         projectId === null) {
         return <NotFound />
     }
+    
+    const project = ProjectRepo.getInstance().getProjectById(projectId);
+
+    // project must exist
+    if (project === null) {
+        return <NotFound />
+    }
 
     return (
         <div>
             <Navbar />
-            <ProjectBanner projectType={type} sourceUrl={'TODO'} accessUrl={'TODO'} />
+            <ProjectBanner
+                projectType={type}
+                sourceUrl={project.source}
+                accessUrl={project.access}
+                tags={project.tags}
+            />
             <div className="project-contents">
                 {EntriesMap[projectId]}
             </div>

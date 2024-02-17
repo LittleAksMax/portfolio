@@ -1,0 +1,57 @@
+.project-banner {
+    display: block;
+    background-color: aquamarine;
+    border-style: double;
+    height: 30px;
+    width: 100%;
+}
+
+/* https://www.tutorialspoint.com/creating-an-animated-pill-shaped-button-using-html-and-css */
+.tag-pill {
+    margin: 5px 3px;
+    border-radius: 5em;
+    padding: 0 1em;
+    text-align: center;
+    text-decoration: none;
+    border-style: solid;
+    background-color: #ddd;
+}
+
+.project-banner-projects {
+}
+
+.project-banner-courseworks {
+}
+
+.project-banner-experiences {
+}
+
+.project-url {
+    float: right;
+    margin: 0;
+    display: inline;
+}
+
+.project-url-link {
+    display: inline-block;
+    padding: 14px 16px;
+    vertical-align: center;
+}
+
+.project-url-link > a {
+    font-family: monospace;
+    text-align: center;
+    text-decoration: none;
+}
+
+.project-url-link > span {
+    font-family: monospace;
+    text-align: center;
+    text-decoration: none;
+}
+
+.link-icon-img {
+    width: 30px;
+    height: 30px;
+    vertical-align: center;
+}
