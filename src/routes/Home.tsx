@@ -8,7 +8,7 @@ const Home: FC = () => {
     return (
         <div>
             <Navbar />
-            <h1>Home</h1>
+            <h1>Hi 👋 I'm David!</h1>
             <Sections />
             <About />
             <Contact />
