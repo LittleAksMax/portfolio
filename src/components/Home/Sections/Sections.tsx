@@ -1,5 +1,5 @@
 import { FC} from "react";
-import { ProjectType } from "../../types";
+import { ProjectType } from "../../../types";
 import './Sections.css';
 
 const Sections: FC = () => {
