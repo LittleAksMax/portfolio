@@ -1,20 +1,3 @@
-/* Sections.module.css */
-#sections {
-    display: flex;
-    width: 100%;
-    height: 100vh;
-}
-
-.section {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-size: cover;
-    background-position: center;
-}
-
 #experiences {
     /* background-image: url('url_to_experiences_background_image'); */
 }
@@ -25,15 +8,4 @@
 
 #courseworks {
     /* background-image: url('url_to_courseworks_background_image'); */
-}
-
-.section h1 {
-    margin: 0;
-    padding-top: 20vh;
-    text-align: center;
-}
-
-.section a {
-    text-decoration: none;
-    text-align: center;
 }

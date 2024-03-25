@@ -1,10 +1,11 @@
 import { FC} from "react";
 import { ProjectType } from "../../../types";
 import './Sections.css';
+import '../sectioning.css';
 
 const Sections: FC = () => {
     return (
-        <div id="sections">
+        <div className="sections">
             <div id="experiences" className="section">
                 <a href={`/${ProjectType.Experiences}`}>
                     <h1>Work Experiences</h1>

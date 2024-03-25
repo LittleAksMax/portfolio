@@ -1,0 +1,27 @@
+/* Sections.module.css */
+.sections {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center;
+}
+
+.section h* {
+    margin: 0;
+    padding-top: 20vh;
+    text-align: center;
+}
+
+.section a {
+    text-decoration: none;
+    text-align: center;
+}

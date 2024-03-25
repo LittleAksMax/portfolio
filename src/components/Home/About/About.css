@@ -1,0 +1,12 @@
+#about {
+    width: 100%;
+}
+
+#about-table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+.column {
+    width: 33.33%;
+}
