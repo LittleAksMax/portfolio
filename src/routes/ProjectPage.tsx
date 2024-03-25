@@ -1,6 +1,5 @@
 import { FC } from "react";
 import { useParams } from "react-router-dom";
-import Navbar from "../components/Navbar/Navbar";
 import { ProjectType } from "../types";
 import NotFound from "../components/Status/NotFound";
 import ProjectBanner from "../components/ProjectBanner/ProjectBanner";
@@ -28,7 +27,6 @@ const ProjectPage: FC = () => {
 
     return (
         <div>
-            <Navbar />
             <ProjectBanner
                 projectType={type}
                 sourceUrl={project.source}

@@ -2,11 +2,14 @@ import React from 'react';
 import { createRoot } from 'react-dom/client';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Navbar from './components/Navbar/Navbar';
 import './index.css';
 
 createRoot(document.getElementById('root') as HTMLElement)
     .render(
         <React.StrictMode>
+            {/* Render Navbar on every single page */}
+            <Navbar /> 
             <App />
         </React.StrictMode>
     );

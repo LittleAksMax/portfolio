@@ -4,6 +4,7 @@ body {
     margin: 0;
     font-family: 'Comfortaa';
     font-size: 18px;
+    padding-top: 50px; /* This is supposed to allow content to escape the navbar */
 }
 
 /* center all h1 tags */
