@@ -1,9 +1,4 @@
 .project-link {
-    /* Assuming default centering from the parent cell is sufficient,
-       but you could add additional styles here for the link if necessary. */
-}
-
-.project-link {
     text-align: center;
 }
 
