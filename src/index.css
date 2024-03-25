@@ -2,5 +2,11 @@
 body {
     padding: 0;
     margin: 0;
-    font-family: 'Comfortaa'
+    font-family: 'Comfortaa';
+    font-size: 18px;
+}
+
+/* center all h1 tags */
+h1 {
+    text-align: center;
 }

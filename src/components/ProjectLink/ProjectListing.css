@@ -1,0 +1,23 @@
+.project-link {
+    /* Assuming default centering from the parent cell is sufficient,
+       but you could add additional styles here for the link if necessary. */
+}
+
+.project-link {
+    text-align: center;
+}
+
+.project-list-tags {
+    display: flex;
+    justify-content: center; /* Centers the tags container in the cell */
+    flex-wrap: wrap; /* Allows tags to wrap to the next line if needed */
+    gap: 4px; /* Adds a small gap between tags for better visual separation */
+}
+  
+.tag-pill {
+    background-color: #eee; /* Light grey background for tags */
+    border-radius: 10px; /* Rounded corners for tag pills */
+    padding: 5px 10px; /* Padding inside each tag pill */
+    display: inline-block; /* Ensures tags are inline elements */
+    margin: 2px; /* Adds margin around each tag for spacing */
+}

@@ -1,12 +1,12 @@
 import { FC } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Home from "./routes/Home";
+import Home from "./routes/Home/Home";
 import Experiences from "./routes/Experiences";
 import Projects from "./routes/Projects";
 import Courseworks from "./routes/Courseworks";
 import ProjectPage from "./routes/ProjectPage";
 import { ProjectType } from "./types";
-import Dev from "./routes/Dev";
+import Dev from "./routes/Dev/Dev";
 import NotFound from "./components/Status/NotFound";
 
 const App: FC = () => {
