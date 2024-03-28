@@ -7,5 +7,42 @@
 }
 
 #courseworks {
-    /* background-image: url('url_to_courseworks_background_image'); */
+    background-image: url('./aubergine_master_logo_for_digital_png.png');
+}
+
+.sections {
+    padding: 5%;
+    display: flex;
+    width: 90%;
+    height: 50vh;
+}
+
+.section {
+    border: #18181810 dashed;
+    width: 33.33%;
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: transform 0.5s ease; /* Smooth transition for moving to center */
+    
+    position: relative;
+    display: flex; /* Enables flexbox layout */
+    align-items: flex-end; /* Aligns children (the h1) at the end of the container (bottom) */
+    justify-content: center; /* Centers children horizontally */
+}
+
+.section:hover {
+    border: none;
+    transform: scale(1.05); /* Scale up a bit to emphasize */
+    z-index: 10; /* Ensure the hovered section is above others */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Optional: add a shadow for better focus */
+}
+
+.section h1 {
+    margin: 0;
+}
+
+.section a {
+    text-decoration: none;
+    text-align: center;
 }

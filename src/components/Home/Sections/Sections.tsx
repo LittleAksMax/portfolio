@@ -1,7 +1,6 @@
 import { FC} from "react";
 import { ProjectType } from "../../../types";
 import './Sections.css';
-import '../sectioning.css';
 
 const Sections: FC = () => {
     return (
