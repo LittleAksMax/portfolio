@@ -1,39 +1,51 @@
 .project-banner {
-    display: inline-block;
-    background-color: aquamarine;
+    display: flex; /* Changed from inline-block to flex */
+    flex-direction: row; /* Stacks children vertically */
+    justify-content: space-between; /* Centers children vertically */
+    align-items: center; /* Centers children horizontally */
     border-style: double;
-    padding-top: 30px;
+    border-width: 5px;
+    margin-top: 13px;
     width: 100%;
-    justify-content: space-between;
+    box-sizing: border-box;
 }
 
 .project-banner-projects {
+    background-color: rgb(219, 250, 240);
 }
 
 .project-banner-courseworks {
+    background-color: rgb(255, 242, 224);
 }
 
 .project-banner-experiences {
+    background-color: rgb(255, 227, 227);
+}
+
+.tags-container {
+    display: flex;
+    align-items: center; /* This line centers the .tag-pill divs vertically within the .tags-container */
+    justify-content: left; /* Centers children within the container horizontally, remove if not desired */
 }
 
 .project-url {
     float: right;
-    margin: 0;
+    margin-right: 50px;
 }
 
 .project-url-link {
     display: inline-block;
-    padding: 14px 16px;
     vertical-align: center;
 }
 
-.project-url-link > a {
+.project-url-link a {
     font-family: monospace;
     text-align: center;
     text-decoration: none;
+    border: #000 1px solid;
 }
 
-.project-url-link > span {
+.project-url-link span {
     font-family: monospace;
     text-align: center;
     text-decoration: none;

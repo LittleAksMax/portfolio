@@ -13,20 +13,24 @@ interface ProjectBannerProps {
 const ProjectBanner: FC<ProjectBannerProps> = ({ projectType, sourceUrl, accessUrl, tags }: ProjectBannerProps) => {
     return (
         <div className={`project-banner project-banner-${projectType}`}>
-            { tags.map(tag =>
-                <Tag tagData={ tag } />
-            ) }
-            
-            <div className="project-url">
-                {/* <img alt="source code icon" className="link-icon-img" src="/sourcecode.png" /> */}
-                <div className="project-url-link">
-                    <span>📁 {sourceUrl ? <a href={sourceUrl}>{sourceUrl}</a> : "N/A"}</span>
-                </div>
+            <div className="tags-container">
+                { tags.map(tag =>
+                    <Tag key={tag.name} tagData={ tag } />
+                ) }
             </div>
-            <div className="project-url">
-                {/* <img alt="project link icon" className="link-icon-img" src="/deployment.png" /> */}
-                <div className="project-url-link">
-                    <span>🌐 {accessUrl ? <a href={accessUrl}>{accessUrl}</a> : "N/A"}</span>
+            
+            <div className="urls-container">
+                <div className="project-url">
+                    {/* <img alt="source code icon" className="link-icon-img" src="/sourcecode.png" /> */}
+                    <div className="project-url-link">
+                        <span>📁 {sourceUrl ? <a href={sourceUrl}>{sourceUrl}</a> : "N/A"}</span>
+                    </div>
+                </div>
+                <div className="project-url">
+                    {/* <img alt="project link icon" className="link-icon-img" src="/deployment.png" /> */}
+                    <div className="project-url-link">
+                        <span>🌐 {accessUrl ? <a href={accessUrl}>{accessUrl}</a> : "N/A"}</span>
+                    </div>
                 </div>
             </div>
         </div>

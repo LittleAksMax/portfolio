@@ -10,10 +10,14 @@
     top: 0;
     width: 100%;
     z-index: 1000;
+    box-sizing: content-box;
 }
   
 #navbar > li {
     float: left;
+    &:last-child {
+        border-right: white 1px solid;
+    }
 }
   
 #navbar > li > span {
@@ -21,11 +25,12 @@
     color: white;
     font-family: monospace;
     text-align: center;
-    padding: 20px 16px;
+    padding: 20px 20px;
     text-decoration: none;
 }
 
 #navbar > li > a {
+    border-left: white 1px solid;
     display: block;
     color: white;
     font-family: monospace;
