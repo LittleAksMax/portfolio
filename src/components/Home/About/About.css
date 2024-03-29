@@ -1,12 +1,27 @@
-#about {
-    width: 100%;
+/* This CSS styles the container to display its children in a grid */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 100vh;
+    padding: 5% 5% 0 5%; /* No padding towards bottom */
+    gap: 10px;
 }
 
-#about-table {
-    width: 100%;
-    table-layout: fixed;
+.tile {
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border: #333 1px solid;
 }
 
-.column {
-    width: 33.33%;
+.tile > h2 {
+    text-align: center;
+}
+
+/* Specific styles for the #picture div to include a background image */
+#picture {
+    /* background-image: url('URL_TO_YOUR_IMAGE'); */ /* Replace URL_TO_YOUR_IMAGE with the actual URL to your image */
+    background-size: cover; /* Ensures the image covers the entire div */
+    background-position: center; /* Centers the background image */
 }

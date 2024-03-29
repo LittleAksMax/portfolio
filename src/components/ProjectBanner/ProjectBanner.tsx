@@ -20,15 +20,15 @@ const ProjectBanner: FC<ProjectBannerProps> = ({ projectType, sourceUrl, accessU
             ) }
             
             <div className="project-url">
-                <img alt="source code icon" className="link-icon-img" src="/sourcecode.png" />
+                {/* <img alt="source code icon" className="link-icon-img" src="/sourcecode.png" /> */}
                 <span className="project-url-link">
-                    {sourceUrl ? <a href={sourceUrl}>{sourceUrl}</a> : <span>N/A</span>}
+                    📁 {sourceUrl ? <a href={sourceUrl}>{sourceUrl}</a> : <span>N/A</span>}
                 </span>
             </div>
             <div className="project-url">
-                <img alt="project link icon" className="link-icon-img" src="/deployment.png" />
+                {/* <img alt="project link icon" className="link-icon-img" src="/deployment.png" /> */}
                 <span className="project-url-link">
-                    {accessUrl ? <a href={accessUrl}>{accessUrl}</a> : <span>N/A</span>}
+                    🌐 {accessUrl ? <a href={accessUrl}>{accessUrl}</a> : <span>N/A</span>}
                 </span>
             </div>
         </div>
