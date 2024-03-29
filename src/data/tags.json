@@ -22,7 +22,7 @@
         {
             "name": "Python",
             "type": "Programming Language",
-            "colour": "#FF9900"
+            "colour": "#FF0000"
         },
         {
             "name": "Rust",

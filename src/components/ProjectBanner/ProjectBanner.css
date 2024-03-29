@@ -1,20 +1,10 @@
 .project-banner {
-    display: block;
+    display: inline-block;
     background-color: aquamarine;
     border-style: double;
-    height: 30px;
+    padding-top: 30px;
     width: 100%;
-}
-
-/* https://www.tutorialspoint.com/creating-an-animated-pill-shaped-button-using-html-and-css */
-.tag-pill {
-    margin: 5px 3px;
-    border-radius: 5em;
-    padding: 0 1em;
-    text-align: center;
-    text-decoration: none;
-    border-style: solid;
-    background-color: #ddd;
+    justify-content: space-between;
 }
 
 .project-banner-projects {
@@ -29,7 +19,6 @@
 .project-url {
     float: right;
     margin: 0;
-    display: inline;
 }
 
 .project-url-link {
@@ -50,8 +39,25 @@
     text-decoration: none;
 }
 
+/* 
 .link-icon-img {
     width: 30px;
     height: 30px;
     vertical-align: center;
+} */
+
+.tags-container, .links-container {
+    display: flex;
+    align-items: center;
+}
+
+.project-url:not(:last-child) {
+    margin-right: 16px; /* Adjusts space between the two project-url divs */
+}
+
+  /* If you reintroduce icons */
+.link-icon-img {
+    margin-right: 8px; /* Space between icon and text */
+    width: 24px; /* Adjust size as needed */
+    height: auto;
 }

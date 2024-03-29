@@ -21,14 +21,14 @@ const About: FC = () => {
                 <div id="skills" className="tile">
                     <h2>Skills 🖥️</h2>
                     
-                    <p>
-                        Most of my experience lies in TODO
-                    </p>
+                    <ul>
+                        <li></li> 
+                    </ul>
                 </div>
                 <div id="interests" className="tile">
                     <h2>Interests 🌟</h2>
                     <ul>
-                        <li>💡 Problem solving TODO</li>
+                        <li>💡 Problem Solving</li>
                         <li>☁️ Cloud</li>
                         <li>💻 Software Engineering</li>
                         <li>🥊 Boxing</li>

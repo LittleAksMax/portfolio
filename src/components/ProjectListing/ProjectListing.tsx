@@ -1,12 +1,12 @@
 import { FC } from "react";
 import { ProjectState } from "../../types";
 import "./ProjectListing.css";
+import Tag from "../tags/Tag";
 
 interface ProjectLinkProps {
     project: ProjectState
 }
 
-// TODO: colour tags
 const ProjectListing: FC<ProjectLinkProps> = ({ project }: ProjectLinkProps) => {
     return (
         <tr className="project-row">
@@ -16,7 +16,7 @@ const ProjectListing: FC<ProjectLinkProps> = ({ project }: ProjectLinkProps) => 
             <td>
                 <div className="project-list-tags">
                     { project.tags.map(tag =>
-                        <span key={tag.name} className="tag-pill">{tag.name}</span>
+                        <Tag tagData={ tag } />
                     )}
                 </div>
             </td>

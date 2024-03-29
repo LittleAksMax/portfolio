@@ -1,7 +1,7 @@
 import { FC, useState } from "react";
 import { ProjectState, ProjectType } from "../../types";
 import ProjectRepo from "../../db/ProjectRepo";
-import ProjectListing from "../ProjectLink/ProjectListing";
+import ProjectListing from "../ProjectListing/ProjectListing";
 import "./ProjectList.css";
 
 interface ProjectListProps {
