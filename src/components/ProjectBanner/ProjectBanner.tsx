@@ -10,6 +10,21 @@ interface ProjectBannerProps {
     tags: TagState[]
 }
 
+const shortenFullUrl = (fullUrl: string): string | null => {
+    const split = fullUrl.split("https://");
+
+    // error
+    if (split.length > 2) {
+        return null;
+    }
+    
+    if (split.length === 1) {
+        return split[0];
+    } else {
+        return split[1];
+    }
+}
+
 const ProjectBanner: FC<ProjectBannerProps> = ({ projectType, sourceUrl, accessUrl, tags }: ProjectBannerProps) => {
     return (
         <div className={`project-banner project-banner-${projectType}`}>
@@ -23,13 +38,13 @@ const ProjectBanner: FC<ProjectBannerProps> = ({ projectType, sourceUrl, accessU
                 <div className="project-url">
                     {/* <img alt="source code icon" className="link-icon-img" src="/sourcecode.png" /> */}
                     <div className="project-url-link">
-                        <span>📁 {sourceUrl ? <a href={sourceUrl}>{sourceUrl}</a> : "N/A"}</span>
+                        <span>📁 {sourceUrl ? <a href={sourceUrl}>{shortenFullUrl(sourceUrl)}</a> : "N/A"}</span>
                     </div>
                 </div>
                 <div className="project-url">
                     {/* <img alt="project link icon" className="link-icon-img" src="/deployment.png" /> */}
                     <div className="project-url-link">
-                        <span>🌐 {accessUrl ? <a href={accessUrl}>{accessUrl}</a> : "N/A"}</span>
+                        <span>🌐 {accessUrl ? <a href={accessUrl}>{shortenFullUrl(accessUrl)}</a> : "N/A"}</span>
                     </div>
                 </div>
             </div>
