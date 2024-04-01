@@ -6,7 +6,7 @@
     ],
     "entries": [
         {
-            "id": "aws-fundamentals-csharp",
+            "id": "aws-fundamentals-course",
             "name": "Nick Chapsas AWS Fundamentals with C#",
             "tags": [
                 "AWS",
@@ -27,6 +27,45 @@
             "type": "experiences",
             "access": null,
             "source": null
+        },
+        {
+            "id": "jwt-by-hand",
+            "name": "JWT by hand",
+            "tags": [
+                "JS",
+                "TS",
+                "Algorithms",
+                "JWT"
+            ],
+            "type": "projects",
+            "access": null,
+            "source": "https://github.com/LittleAksMax/jwt-by-hand.git"
+        },
+        {
+            "id": "portfolio",
+            "name": "Portfolio",
+            "tags": [
+                "React",
+                "TS",
+                "JS",
+                "CSS"
+            ],
+            "type": "projects",
+            "access": "https://portfolio.davidrosental.co.uk",
+            "source": "https://github.com/LittleAksMax/portfolio.git"
+        },
+        {
+            "id": "rest-api-course",
+            "name": "Nick Chapsas REST API Course with C# and ASP.NET Core",
+            "tags": [
+                "C#",
+                "REST",
+                "PostgreSQL",
+                "ASP.NET Core"
+            ],
+            "type": "projects",
+            "access": null,
+            "source": "https://github.com/LittleAksMax/aspnet-rest-template.git"
         }
     ]
 }

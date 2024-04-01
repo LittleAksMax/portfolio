@@ -75,7 +75,7 @@
             "colour": "#FF9900"
         },
         {
-            "name": "REST API",
+            "name": "REST",
             "type": "Web",
             "colour": "#FF9900"
         },
@@ -98,6 +98,16 @@
             "name": "PyQt5",
             "type": "Framework",
             "colour": "#FF9900"
+        },
+        {
+            "name": "Algorithms",
+            "type": "Fundamentals",
+            "colour": "#FF9900"
+        },
+        {
+            "name": "JWT",
+            "type": "Fundamentals",
+            "colour": "#00EDF9"
         }
     ]
 }
