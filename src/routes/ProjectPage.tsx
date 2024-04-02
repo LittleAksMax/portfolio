@@ -28,7 +28,6 @@ const ProjectPage: FC = () => {
     return (
         <div>
             <ProjectBanner
-                projectType={type}
                 projectName={project.name}
                 projectSubtitle={project.brief}
                 sourceUrl={project.source}

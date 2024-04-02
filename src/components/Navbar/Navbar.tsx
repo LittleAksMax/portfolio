@@ -10,11 +10,13 @@ export const onHomeNavBtnHover = (_) => {
 const Navbar: FC = () => {
     return (
         <ul id="navbar">
-            <li><span>$ cd</span></li>
-            <li><a id="home" href="/">~</a></li>
-            <li><a href="/dev">~/dev</a></li>
-            <li><a href="/#about">~/about-me</a></li>
-            <li><a href="/#contact">~/contact</a></li>
+            <div id="left-navbar">
+                <li><a id="home" href="/">&lt;David /&gt;</a></li>
+            </div>
+            <div id="right-navbar">
+                <li><a href="/dev">Dev</a></li>
+                <li><a href="https://blog.davidrosental.co.uk">Blog</a></li>
+            </div>
         </ul>
     );
 };

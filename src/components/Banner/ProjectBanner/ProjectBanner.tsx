@@ -1,12 +1,10 @@
 import { FC } from "react";
-import { ProjectType } from "../../../types";
 import ProjectUrls from "./ProjectUrls";
 import { ProjectUrlType } from "./types";
 import Banner from "../Banner";
 import Tags from "../../tags/Tags";
 
 interface ProjectBannerProps {
-    projectType: ProjectType;
     projectName: string;
     projectSubtitle: string;
     sourceUrl: string | null; // used for something like a GitHub link or a zip file
@@ -14,7 +12,7 @@ interface ProjectBannerProps {
     tags: string[]
 }
 
-const ProjectBanner: FC<ProjectBannerProps> = ({ projectType, projectName, projectSubtitle, sourceUrl, accessUrl, tags }: ProjectBannerProps) => {
+const ProjectBanner: FC<ProjectBannerProps> = ({ projectName, projectSubtitle, sourceUrl, accessUrl, tags }: ProjectBannerProps) => {
     const urls: ProjectUrlType[] = [
         {
             name: "VIEW APP",
@@ -27,7 +25,7 @@ const ProjectBanner: FC<ProjectBannerProps> = ({ projectType, projectName, proje
     ]
 
     return (
-        <Banner type={ projectType } title={ projectName } subtitle={projectSubtitle}>
+        <Banner title={ projectName } subtitle={projectSubtitle}>
             <Tags tags={ tags } />
             <ProjectUrls urls={ urls } />
         </Banner>

@@ -3,5 +3,7 @@
     flex-direction: column; /* Stacks children vertically */
     width: 100%;
     box-sizing: border-box;
-    background-color: #EDEEF9;
+    background-color: #DFE4E8;
+    background-size: 20px 20px;
+    background-image: radial-gradient(circle, #C0C0C0 0.5px, transparent 10%);
 }
