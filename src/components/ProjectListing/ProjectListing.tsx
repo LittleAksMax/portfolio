@@ -15,8 +15,8 @@ const ProjectListing: FC<ProjectLinkProps> = ({ project }: ProjectLinkProps) => 
             </td>
             <td>
                 <div className="project-list-tags">
-                    { project.tags.map(tag =>
-                        <Tag tagData={ tag } />
+                    { project.tags.map(tagName =>
+                        <Tag name={ tagName } />
                     )}
                 </div>
             </td>

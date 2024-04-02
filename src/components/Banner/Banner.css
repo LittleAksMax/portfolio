@@ -1,0 +1,7 @@
+.banner {
+    display: flex; /* Changed from inline-block to flex */
+    flex-direction: column; /* Stacks children vertically */
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #EDEEF9;
+}

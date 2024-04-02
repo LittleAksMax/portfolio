@@ -10,22 +10,12 @@ export interface InitialState {
     entries: ProjectState[];
 }
 
-export interface TagsAvailable {
-    types: string[];
-    tags: TagState[];
-}
-
 export interface ProjectState {
     id: string;
     name: string;
-    tags: TagState[];
+    brief: string;
+    tags: string[];
     type: string;
     access: string | null;
     source: string | null;
-}
-
-export interface TagState {
-    name: string;
-    type: string;
-    colour: string;
 }

@@ -4,10 +4,20 @@ body {
     margin: 0;
     font-family: 'Roboto';
     font-size: 18px;
-    padding-top: 50px; /* This is supposed to allow content to escape the navbar */
+    font-weight: 200;
 }
 
-/* center all h1 tags */
 h1 {
+    font-weight: 200;
+    color: #2B55AD;
     text-align: center;
+}
+
+h2 {
+    font-weight: 200;
+    color: #2B55AD;
+}
+
+b {
+    color: #2B55AD;
 }

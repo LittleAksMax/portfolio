@@ -1,11 +1,11 @@
 /* https://www.tutorialspoint.com/creating-an-animated-pill-shaped-button-using-html-and-css */
 .tag-pill {
     margin: 5px 3px;
-    border-radius: 5em;
+    border-radius: 1em;
     padding: 5px 1em 5px 1em;
     text-align: center;
     text-decoration: none;
-    border-style: solid;
     color: white;
     display: inline-block;
+    background-color: #3970E6;
 }

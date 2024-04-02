@@ -2,7 +2,7 @@ import { FC } from "react";
 import { useParams } from "react-router-dom";
 import { ProjectType } from "../types";
 import NotFound from "../components/Status/NotFound";
-import ProjectBanner from "../components/ProjectBanner/ProjectBanner";
+import ProjectBanner from "../components/Banner/ProjectBanner/ProjectBanner";
 import EntriesMap from "../entries/EntryComponentConfig";
 import ProjectRepo from "../db/ProjectRepo";
 
@@ -29,6 +29,8 @@ const ProjectPage: FC = () => {
         <div>
             <ProjectBanner
                 projectType={type}
+                projectName={project.name}
+                projectSubtitle={project.brief}
                 sourceUrl={project.source}
                 accessUrl={project.access}
                 tags={project.tags}

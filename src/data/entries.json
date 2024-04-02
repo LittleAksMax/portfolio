@@ -1,24 +1,21 @@
 {
-    "types": [
-        "courseworks",
-        "projects",
-        "experiences"
-    ],
     "entries": [
         {
             "id": "aws-fundamentals-course",
             "name": "Nick Chapsas AWS Fundamentals with C#",
+            "brief": "",
             "tags": [
                 "AWS",
                 "C#"
             ],
             "type": "projects",
-            "access": "https://www.example.com",
+            "access": null,
             "source": null
         },
         {
             "id": "greenpyrus-ltd",
             "name": "Part-time Junior Software Developer at GreenPyrus Ltd.",
+            "brief": "",
             "tags": [
                 "Python",
                 "MariaDb",
@@ -31,6 +28,7 @@
         {
             "id": "jwt-by-hand",
             "name": "JWT by hand",
+            "brief": "An implementation of JSON Web Token authorisation.",
             "tags": [
                 "JS",
                 "TS",
@@ -44,6 +42,7 @@
         {
             "id": "portfolio",
             "name": "Portfolio",
+            "brief": "",
             "tags": [
                 "React",
                 "TS",
@@ -57,6 +56,7 @@
         {
             "id": "rest-api-course",
             "name": "Nick Chapsas REST API Course with C# and ASP.NET Core",
+            "brief": "",
             "tags": [
                 "C#",
                 "REST",

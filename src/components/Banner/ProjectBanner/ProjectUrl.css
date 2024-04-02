@@ -1,0 +1,13 @@
+.project-url-link {
+    display: inline-block;
+    vertical-align: center;
+}
+
+.project-url-link a {
+    text-align: center;
+    text-decoration: none;
+}
+
+.project-url:not(:last-child) {
+    margin-right: 16px; /* Adjusts space between the two project-url divs */
+}
