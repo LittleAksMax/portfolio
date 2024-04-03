@@ -10,13 +10,15 @@ body {
 
 h1 {
     font-weight: 100;
+    margin: 0;
+    margin-top: 10px;
+    padding: 0;
     color: #2B55AD;
     text-align: center;
 }
 
 h2 {
     font-weight: 100;
-    color: #2B55AD;
 }
 
 b {

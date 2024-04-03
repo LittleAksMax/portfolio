@@ -7,11 +7,17 @@
     "entries": [
         {
             "id": "aws-fundamentals-course",
-            "name": "Nick Chapsas AWS Fundamentals with C#",
-            "brief": "",
+            "name": "AWS Fundamentals with C#",
+            "brief": "AWS Fundamentals Course by Nick Chapsas",
             "tags": [
                 "AWS",
-                "C#"
+                "C#",
+                "S3",
+                "Lambda",
+                "DynamoDB",
+                "SQS",
+                "SNS",
+                "Secrets Manager"
             ],
             "type": "projects",
             "access": null,
@@ -20,7 +26,7 @@
         {
             "id": "greenpyrus-ltd",
             "name": "Part-time Junior Software Developer at GreenPyrus Ltd.",
-            "brief": "",
+            "brief": "Creating intuitive interfaces for desktop applications and data management.",
             "tags": [
                 "Python",
                 "MariaDb",
@@ -47,7 +53,7 @@
         {
             "id": "portfolio",
             "name": "Portfolio",
-            "brief": "",
+            "brief": "A small React Project used to serve this website!",
             "tags": [
                 "React",
                 "TS",
@@ -60,8 +66,8 @@
         },
         {
             "id": "rest-api-course",
-            "name": "Nick Chapsas REST API Course with C# and ASP.NET Core",
-            "brief": "",
+            "name": "REST API Course with C#",
+            "brief": "Creating robust REST APIs with ASP.NET Core with C# by Nick Chapsas",
             "tags": [
                 "C#",
                 "REST",

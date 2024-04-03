@@ -1,11 +1,5 @@
 import { FC } from "react";
-import "./navbar.css"
-
-const homeNavBtnId = "home-nav-btn";
-
-export const onHomeNavBtnHover = (_) => {
-    console.log(document.getElementById(homeNavBtnId));
-}
+import "./Navbar.css"
 
 const Navbar: FC = () => {
     return (

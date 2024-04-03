@@ -14,10 +14,10 @@ const Banner: FC<BannerProps> = ({ title, subtitle, children }: BannerProps) => 
     logging.debug("Banner", "Children:", children);
 
     return (
-        <div className="banner">
+        <div id="banner">
             <h1>{ title }</h1>
             <h2>{ subtitle }</h2>
-            <div className="banner-container">
+            <div id="banner-container">
                 {/* Only map the first and last URL in the array to ensure there are at most 2 */}
                 { childArray.map((child, idx) =>
                     (idx === 0 || idx === childArray.length - 1) ? child : null

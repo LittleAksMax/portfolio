@@ -8,8 +8,8 @@ const About: FC = () => {
                 <div id="picture" className="tile">
                 </div>
                 <div id="me" className="tile">
-                    <h2 id="title">Hi there, 👋 I'm David.</h2>
-                    <p>I'm a British-Hungarian (🇬🇧-🇭🇺) Computer Science student at the University of Warwick.</p>
+                    <h2 id="title">Who I am</h2>
+                    <p>Hello, I'm David. I'm a British-Hungarian (🇬🇧-🇭🇺) Computer Science student at the University of Warwick.</p>
                     <p>I started university in 2023 (which makes me a first year).</p>
 
                     <ul id="socials">

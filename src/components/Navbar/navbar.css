@@ -1,6 +1,7 @@
 #navbar {
     font-family: Hack, monospace;
     font-size: 20px;
+    height: 60px;
     list-style-type: none;
     display: flex;
     flex-direction: row;
@@ -20,6 +21,7 @@
     display: inline-flex;
     flex-direction: row;
     float: right;
+    padding-right: 50px;
 }
 
 #navbar li > a {
@@ -27,6 +29,6 @@
     color: #2B55AD;
     font-family: monospace;
     text-align: center;
-    padding: 20px 20px;
+    padding: 20px 10px;
     text-decoration: none;
 }
