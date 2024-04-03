@@ -1,4 +1,9 @@
 {
+    "types": [
+        "projects",
+        "courseworks",
+        "experiences"
+    ],
     "entries": [
         {
             "id": "aws-fundamentals-course",

@@ -1,4 +1,4 @@
 .url-container {
-    float: right;
-    margin-right: 50px;
+    flex: 20%;
+    padding: 10px;
 }

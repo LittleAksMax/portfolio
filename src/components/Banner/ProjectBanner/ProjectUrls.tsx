@@ -11,7 +11,7 @@ const ProjectUrls: FC<ProjectUrlsProps> = ({ urls }: ProjectUrlsProps) => {
     return (
         <div className="url-container">
             { urls.map(url => 
-                <ProjectUrl url={ url.url } name={ url.name } />
+                <ProjectUrl key={ url.name } url={ url.url } name={ url.name } />
             )}
         </div>
     );

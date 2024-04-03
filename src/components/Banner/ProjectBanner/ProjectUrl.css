@@ -6,6 +6,7 @@
 .project-url-link a {
     text-align: center;
     text-decoration: none;
+    font-size: 24px;
 }
 
 .project-url:not(:last-child) {

@@ -3,19 +3,19 @@ body {
     padding: 0;
     margin: 0;
     font-family: 'Roboto';
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 200;
     background-color: #F9F9F9;
 }
 
 h1 {
-    font-weight: 200;
+    font-weight: 100;
     color: #2B55AD;
     text-align: center;
 }
 
 h2 {
-    font-weight: 200;
+    font-weight: 100;
     color: #2B55AD;
 }
 
