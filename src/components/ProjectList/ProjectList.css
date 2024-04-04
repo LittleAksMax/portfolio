@@ -1,6 +1,7 @@
 #project-table {
     width: 100%; /* Ensures the table spans the entire container width */
     border-collapse: collapse; /* Optional: for styling borders in tables */
+    background-color: #ECEEF0;
 }
 
 .project-row td {

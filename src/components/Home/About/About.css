@@ -1,27 +1,41 @@
-/* This CSS styles the container to display its children in a grid */
-.grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    height: 100vh;
-    padding: 5% 5% 0 5%; /* No padding towards bottom */
-    gap: 10px;
+.even-section {
+    background-color: #ECEEF0;
 }
 
-.tile {
+.odd-section {
+    background-color: #E7E9EB;
+}
+
+#about {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    padding: 20px;
-    border: #333 1px solid;
 }
 
-.tile > h2 {
+.about-section {
+    width: 100%;
+}
+
+.about-section-content {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    margin: 0 auto; /* This centers the div */
+}
+
+.about-text, .about-image-frame-container {
+    flex: 1; /* This makes each take up half the space of .about-section */
+}
+
+/* Assuming you want some space between the image and text */
+.about-image-frame-container {
+    margin-right: 20px; /* Adjust as needed */
+}
+
+.about-text {
+    margin-left: 20px; /* Adjust as needed */
+}
+
+.about-section-heading {
     text-align: center;
-}
-
-/* Specific styles for the #picture div to include a background image */
-#picture {
-    /* background-image: url('URL_TO_YOUR_IMAGE'); */ /* Replace URL_TO_YOUR_IMAGE with the actual URL to your image */
-    background-size: cover; /* Ensures the image covers the entire div */
-    background-position: center; /* Centers the background image */
 }

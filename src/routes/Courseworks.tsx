@@ -1,13 +1,14 @@
 import { FC } from "react";
 import ProjectList from "../components/ProjectList/ProjectList";
 import { ProjectType } from "../types";
+import Page from "../components/Page/Page";
+import Banner from "../components/Banner/Banner";
 
 const Courseworks: FC = () => {
     return (
-        <div>
-            <h1>Courseworks</h1>
+        <Page banner={<Banner title="Notable University Courseworks" />}>
             <ProjectList type={ProjectType.Courseworks} />
-        </div>
+        </Page>
     );
 };
 

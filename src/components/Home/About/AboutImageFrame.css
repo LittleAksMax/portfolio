@@ -1,0 +1,13 @@
+.about-image-frame {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    margin-right: 20px; /* Adjust as needed, for spacing */
+    border: #000 solid;
+}
+
+.framed-image {
+    border: #000 solid;
+    margin: 10px;
+    margin-bottom: 50px;
+}

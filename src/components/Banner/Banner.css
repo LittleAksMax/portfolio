@@ -13,3 +13,7 @@
     display: flex;
     justify-content: space-between;
 }
+
+#subtitle {
+    padding-left: 20px;
+}

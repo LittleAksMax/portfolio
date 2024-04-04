@@ -1,9 +1,9 @@
 #experiences {
-    /* background-image: url('url_to_experiences_background_image'); */
+    background-image: url('./aubergine_master_logo_for_digital_png.png');
 }
 
 #projects {
-    /* background-image: url('url_to_projects_background_image'); */
+    background-image: url('./aubergine_master_logo_for_digital_png.png');
 }
 
 #courseworks {
@@ -15,11 +15,13 @@
     display: flex;
     width: 90%;
     height: 50vh;
+    background-color: #ECEEF0;
 }
 
-.section {
-    border: #18181810 dashed;
+.sections-section {
+    border: #18181810 solid;
     width: 33.33%;
+    background-color: #F9F9F9;
     background-size: 80%;
     background-position: center;
     background-repeat: no-repeat;
@@ -31,18 +33,18 @@
     justify-content: center; /* Centers children horizontally */
 }
 
-.section:hover {
+.sections-section:hover {
     border: none;
-    transform: scale(1.05); /* Scale up a bit to emphasize */
-    z-index: 10; /* Ensure the hovered section is above others */
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Optional: add a shadow for better focus */
+    z-index: 1; /* so enlarged goes over the surrounding sections */
+    transform: scale(1.05); /* enlarge for emphasis */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* add a shadow for emphasis */
 }
 
-.section h1 {
+.sections-section h1 {
     margin: 0;
 }
 
-.section a {
+.sections-section a {
     text-decoration: none;
     text-align: center;
 }

@@ -1,18 +1,18 @@
 #navbar {
     position: fixed;
     width: 100%;
-    z-index: 1;
     top: 0;
 }
 
 #banner {
     position: fixed;
     width: 100%;
-    z-index: 1;
     top: 60px;
 }
 
 #content {
     margin-top: 360px;
     z-index: 1000;
+    position: relative;
+    background-color: #F9F9F9;
 }
