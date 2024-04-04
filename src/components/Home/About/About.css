@@ -18,22 +18,13 @@
 
 .about-section-content {
     display: flex;
-    width: 80%;
+    width: 60%;
     justify-content: space-between;
     margin: 0 auto; /* This centers the div */
 }
 
 .about-text, .about-image-frame-container {
     flex: 1; /* This makes each take up half the space of .about-section */
-}
-
-/* Assuming you want some space between the image and text */
-.about-image-frame-container {
-    margin-right: 20px; /* Adjust as needed */
-}
-
-.about-text {
-    margin-left: 20px; /* Adjust as needed */
 }
 
 .about-section-heading {

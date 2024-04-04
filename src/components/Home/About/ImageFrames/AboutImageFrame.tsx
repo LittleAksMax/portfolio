@@ -8,10 +8,9 @@ interface AboutImageFrameProps {
 }
 
 const AboutImageFrame: FC<AboutImageFrameProps> = ({ src, alt, children }: AboutImageFrameProps) => {
-    // TODO: replace placeholder image with { src }
     return (
         <div className="about-image-frame">
-            <img className="framed-image" src="aubergine_master_logo_for_digital_png.png" alt={ alt } />
+            <img className="framed-image" src={ src } alt={ alt } />
             { children }
         </div>
     )
