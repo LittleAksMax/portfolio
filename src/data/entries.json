@@ -1,7 +1,7 @@
 {
     "types": [
         "projects",
-        "courseworks",
+        "certifications",
         "experiences"
     ],
     "entries": [
@@ -19,7 +19,7 @@
                 "SNS",
                 "Secrets Manager"
             ],
-            "type": "projects",
+            "type": "certifications",
             "access": null,
             "source": null
         },
@@ -30,7 +30,11 @@
             "tags": [
                 "Python",
                 "MariaDb",
-                "PyQt5"
+                "PyQt5",
+                "Lambda",
+                "ReactJS",
+                "S3",
+                "ASP.NET Core"
             ],
             "type": "experiences",
             "access": null,
@@ -74,7 +78,7 @@
                 "PostgreSQL",
                 "ASP.NET Core"
             ],
-            "type": "projects",
+            "type": "certifications",
             "access": null,
             "source": "https://github.com/LittleAksMax/aspnet-rest-template.git"
         }

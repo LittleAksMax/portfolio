@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./routes/Home/Home";
 import Experiences from "./routes/Experiences";
 import Projects from "./routes/Projects";
-import Courseworks from "./routes/Courseworks";
+import Certifications from "./routes/Certifications";
 import ProjectPage from "./routes/ProjectPage";
 import { ProjectType } from "./types";
 import Dev from "./routes/Dev/Dev";
@@ -16,7 +16,7 @@ const App: FC = () => {
                 <Route path="/" element={<Home />} />
                 <Route path={`/${ProjectType.Experiences}`} element={<Experiences />} />
                 <Route path={`/${ProjectType.Projects}`} element={<Projects />} />
-                <Route path={`/${ProjectType.Courseworks}`} element={<Courseworks />} />
+                <Route path={`/${ProjectType.Certifications}`} element={<Certifications />} />
                 <Route path="/dev" element={<Dev />} />
                 <Route path="/dev/:type/:projectId" element={<ProjectPage />} />
 

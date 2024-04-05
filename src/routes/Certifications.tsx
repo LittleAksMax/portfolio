@@ -4,12 +4,12 @@ import { ProjectType } from "../types";
 import Page from "../components/Page/Page";
 import Banner from "../components/Banner/Banner";
 
-const Courseworks: FC = () => {
+const Certifications: FC = () => {
     return (
-        <Page banner={<Banner title="Notable University Courseworks" />}>
-            <ProjectList type={ProjectType.Courseworks} />
+        <Page banner={<Banner title="Certifications" />}>
+            <ProjectList type={ProjectType.Certifications} />
         </Page>
     );
 };
 
-export default Courseworks;
+export default Certifications;

@@ -14,6 +14,7 @@
 
 .about-section {
     width: 100%;
+    height: 300px;
 }
 
 .about-section-content {
@@ -23,10 +24,24 @@
     margin: 0 auto; /* This centers the div */
 }
 
-.about-text, .about-image-frame-container {
-    flex: 1; /* This makes each take up half the space of .about-section */
+.about-text, .about-frame-container {
+    padding: 20px;
+}
+
+.about-text {
+    flex: 60%;
+}
+
+.about-frame-container {
+    flex: 40%;
+    align-content: center;
+    justify-content: center;
 }
 
 .about-section-heading {
     text-align: center;
+}
+
+.about-section h2 {
+    color: #2B55AD;
 }

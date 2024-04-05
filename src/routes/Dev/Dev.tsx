@@ -13,9 +13,9 @@ const Dev: FC = () => {
                 
             </div>
             <div id="all-projects">
-                <ProjectList type={ProjectType.Projects} />
-                <ProjectList type={ProjectType.Courseworks} />
                 <ProjectList type={ProjectType.Experiences} />
+                <ProjectList type={ProjectType.Projects} />
+                <ProjectList type={ProjectType.Certifications} />
             </div>
         </Page>
     );

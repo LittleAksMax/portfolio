@@ -11,7 +11,7 @@ export const ProjectPage: FC = () => {
     const { type, projectId } = useParams();
 
     // ensure type route parameter is valid
-    if ((ProjectType.Courseworks !== type &&
+    if ((ProjectType.Certifications !== type &&
         ProjectType.Experiences !== type &&
         ProjectType.Projects !== type) ||
         projectId === undefined ||

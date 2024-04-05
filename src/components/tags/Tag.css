@@ -1,5 +1,6 @@
 /* https://www.tutorialspoint.com/creating-an-animated-pill-shaped-button-using-html-and-css */
 .tag-pill {
+    font-size: 16px;
     margin: 3px 1px;
     border-radius: 10px;
     padding: 5px 1em 5px 1em;

@@ -1,7 +1,7 @@
 
 export enum ProjectType {
     Projects = "projects",
-    Courseworks = "courseworks",
+    Certifications = "certifications",
     Experiences = "experiences"
 }
 
