@@ -1,18 +1,22 @@
-import { FC } from "react";
+import { FC, ReactNode } from "react";
 import ProjectUrls from "./ProjectUrls";
 import { ProjectUrlType } from "./types";
 import Banner from "../Banner";
 import Tags from "../../tags/Tags";
+import "./SpecialisedBanner.css";
 
 interface ProjectBannerProps {
     projectName: string;
     projectSubtitle: string;
     sourceUrl: string | null; // used for something like a GitHub link or a zip file
     accessUrl: string | null; // used for either deployment link or software download link
-    tags: string[]
+    tags: string[];
+    pageToggle: ReactNode;
 }
 
-const ProjectBanner: FC<ProjectBannerProps> = ({ projectName, projectSubtitle, sourceUrl, accessUrl, tags }: ProjectBannerProps) => {
+const ProjectBanner: FC<ProjectBannerProps> = (
+    { projectName, projectSubtitle, sourceUrl, accessUrl, tags, pageToggle }: ProjectBannerProps
+) => {
     const urls: ProjectUrlType[] = [
         {
             name: "VIEW APP",
@@ -26,8 +30,13 @@ const ProjectBanner: FC<ProjectBannerProps> = ({ projectName, projectSubtitle, s
 
     return (
         <Banner title={ projectName } subtitle={projectSubtitle}>
-            <Tags tags={ tags } />
-            <ProjectUrls urls={ urls } />
+            <div className="project-data">
+                <Tags tags={ tags } />
+                <ProjectUrls urls={ urls } />
+            </div>
+            <div className="page-toggle-container">
+                { pageToggle }
+            </div>
         </Banner>
     );
 };

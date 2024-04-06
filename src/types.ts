@@ -1,3 +1,4 @@
+import { ReactNode } from "react";
 
 export enum ProjectType {
     Projects = "projects",
@@ -33,4 +34,9 @@ export interface ExperienceState {
 export type TagSelection = {
     tag: string;
     selected: boolean;
+}
+
+export type EntryType = {
+    overview: ReactNode;
+    details: ReactNode;
 }

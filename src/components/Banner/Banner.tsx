@@ -17,7 +17,7 @@ const Banner: FC<BannerProps> = ({ title, subtitle, children }: BannerProps) => 
         <div id="banner">
             <h1 id="title">{ title }</h1>
             <h2 id="subtitle">{ subtitle }</h2>
-            <div id="banner-container">
+            <div className="banner-container">
                 {/* Only map the first and last URL in the array to ensure there are at most 2 */}
                 { childArray.map((child, idx) =>
                     (idx === 0 || idx === childArray.length - 1) ? child : null

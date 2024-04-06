@@ -1,0 +1,9 @@
+.page-toggle-container {
+    padding-top: 30px;
+}
+
+.project-data {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}

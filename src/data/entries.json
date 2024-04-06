@@ -56,7 +56,7 @@
         {
             "id": "portfolio",
             "name": "Portfolio",
-            "brief": "A small React Project used to serve this website!",
+            "brief": "The project used to serve this website!",
             "tags": [
                 "ReactJS",
                 "TS",

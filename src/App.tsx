@@ -4,7 +4,7 @@ import Home from "./routes/Home/Home";
 import Experiences from "./routes/Experiences";
 import Projects from "./routes/Projects";
 import Certifications from "./routes/Certifications";
-import ProjectPage from "./routes/ProjectPage";
+import ProjectPage from "./components/ProjectPage/ProjectPage";
 import { ProjectType } from "./types";
 import Dev from "./routes/Dev/Dev";
 import NotFound from "./components/Status/NotFound";

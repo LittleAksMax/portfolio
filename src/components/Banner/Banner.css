@@ -9,8 +9,9 @@
     background-image: radial-gradient(circle, #C0C0C0 0.5px, transparent 10%);
 }
 
-#banner-container {
+.banner-container {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     padding-left: 20px;
 }

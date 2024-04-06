@@ -4,8 +4,6 @@ import Tag from "../../components/tags/Tag";
 import "./ProjectFilter.css";
 import { TagSelection } from "../../types";
 
-
-
 interface ProjectFilterProps {
     tags: TagSelection[];
     setTags: Dispatch<SetStateAction<TagSelection[]>>;
