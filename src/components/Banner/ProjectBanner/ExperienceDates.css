@@ -1,0 +1,10 @@
+.date-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.start-date, .end-date, .date-separator {
+    color: #A2A2A2;
+    font-style: italic;
+    padding: 10px;
+}

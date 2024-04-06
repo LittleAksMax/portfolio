@@ -8,11 +8,3 @@
     flex-wrap: wrap; /* Allows tags to wrap to the next line if needed */
     gap: 4px; /* Adds a small gap between tags for better visual separation */
 }
-  
-.tag-pill {
-    background-color: #eee; /* Light grey background for tags */
-    border-radius: 10px; /* Rounded corners for tag pills */
-    padding: 5px 10px; /* Padding inside each tag pill */
-    display: inline-block; /* Ensures tags are inline elements */
-    margin: 2px; /* Adds margin around each tag for spacing */
-}

@@ -31,7 +31,7 @@ const About: FC = () => {
             <div id="skills" className="about-section odd-section">
                 <div className="about-section-content">
                     <div className="about-frame-container">
-                        <h2 className="about-section-heading">In my toolbox 🔧</h2>                        
+                        <h2 className="about-section-heading">In my Toolbox</h2>                        
                     </div>
                     <div className="about-text">
                         <p><u>Languages:</u> <b>Python</b> (<i>intermediate</i>), <b>Java</b> (<i>intermediate</i>), <b>C#</b> (<i>intermediate</i>), <b>Javascript/Typescript</b> (<i>intermediate</i>), <b>C</b>/<b>C++</b> (<i>beginner</i>), <b>HTML</b>/<b>CSS</b>/<b>JS</b> (<i>beginner</i>)</p>

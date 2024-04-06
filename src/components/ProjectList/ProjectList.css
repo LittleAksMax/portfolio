@@ -1,20 +1,19 @@
-#project-table {
-    width: 100%; /* Ensures the table spans the entire container width */
-    border-collapse: collapse; /* Optional: for styling borders in tables */
+.project-table {
+    width: 100%;
+    border-collapse: collapse;
     background-color: #ECEEF0;
 }
 
 .project-row td {
-    text-align: center; /* Centers the content of each cell */
-    padding: 8px; /* Adds some padding for spacing around content */
-    border-bottom: 1px solid #ddd; /* Optional: adds a line between rows */
+    text-align: center;
+    padding: 8px;
+    border-bottom: 1px solid #DDD;
 }
 
-/* Setting fixed widths for columns */
-.project-row td:nth-child(1) {
+.project-row td:first-child {
     width: 50%; /* Adjust according to your content */
 }
   
-.project-row td:nth-child(2) {
+.project-row td:last-child {
     width: 50%; /* Adjust according to your content */
 }

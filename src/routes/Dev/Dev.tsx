@@ -3,8 +3,8 @@ import ProjectList from "../../components/ProjectList/ProjectList";
 import { ProjectType } from "../../types";
 import Banner from "../../components/Banner/Banner";
 import Page from "../../components/Page/Page";
+import "./Dev.css";
 
-// TODO: this would be like a full project repository, rather than sectioned
 // TODO: search by name, filter by tags
 const Dev: FC = () => {
     return (
@@ -13,9 +13,18 @@ const Dev: FC = () => {
                 
             </div>
             <div id="all-projects">
-                <ProjectList type={ProjectType.Experiences} />
-                <ProjectList type={ProjectType.Projects} />
-                <ProjectList type={ProjectType.Certifications} />
+                <div className="experience-projects">
+                    <h1 className="project-section-heading">Experiences</h1>
+                    <ProjectList type={ProjectType.Experiences} />
+                </div>
+                <div className="projects-projects">
+                    <h1 className="project-section-heading">Projects</h1>
+                    <ProjectList type={ProjectType.Projects} />
+                </div>
+                <div className="certifications-projects">
+                    <h1 className="project-section-heading">Certifications</h1>
+                    <ProjectList type={ProjectType.Certifications} />
+                </div>
             </div>
         </Page>
     );

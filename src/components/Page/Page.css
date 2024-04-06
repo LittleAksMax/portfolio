@@ -15,4 +15,5 @@
     z-index: 1000;
     position: relative;
     background-color: #F9F9F9;
+    margin-bottom: 10%; /* so it can always be scrolled a bit up */
 }

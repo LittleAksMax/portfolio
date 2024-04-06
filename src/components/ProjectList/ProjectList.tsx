@@ -11,12 +11,12 @@ interface ProjectListProps {
 const ProjectList: FC<ProjectListProps> = ({ type }: ProjectListProps) => {
     const [projects] = useState<ProjectState[]>(ProjectRepo.getInstance().getOfType(type));
     return (
-        <table id="project-table">
+        <table className="project-table">
             <tbody>
                 {projects.map(proj =>
                     <ProjectListing
                         key={`${proj.id}-projlisting`}
-                        project={proj}   
+                        project={proj}
                     />
                 )}
             </tbody>
