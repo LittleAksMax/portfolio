@@ -1,0 +1,17 @@
+.listing-dates {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.experience-description {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.experience-dates-container {
+    display: flex;
+}

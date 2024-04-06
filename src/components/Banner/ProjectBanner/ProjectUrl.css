@@ -2,19 +2,10 @@
     display: inline-block;
     box-sizing: border-box;
     vertical-align: center;
-    padding-right: 20px;
-}
-
-.project-url-link:last-child {
-    padding: 0;
 }
 
 .project-url-link a {
     text-align: center;
     text-decoration: none;
     font-size: 24px;
-}
-
-.project-url:not(:last-child) {
-    margin-right: 16px; /* Adjusts space between the two project-url divs */
 }

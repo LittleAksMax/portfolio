@@ -1,6 +1,4 @@
 import { FC } from "react";
-import ProjectUrls from "./ProjectUrls";
-import { ProjectUrlType } from "./types";
 import Banner from "../Banner";
 import Tags from "../../tags/Tags";
 import ExperienceDates from "./ExperienceDates";

@@ -1,6 +1,6 @@
 import { FC } from "react";
 import { ProjectState } from "../../types";
-import "./ProjectListing.css";
+import "./Listing.css";
 import Tag from "../tags/Tag";
 
 interface ProjectLinkProps {
@@ -16,7 +16,7 @@ const ProjectListing: FC<ProjectLinkProps> = ({ project }: ProjectLinkProps) => 
             <td>
                 <div className="project-list-tags">
                     { project.tags.map(tagName =>
-                        <Tag name={ tagName } />
+                        <Tag key={`${project.id}-${tagName}`} name={ tagName } />
                     )}
                 </div>
             </td>
