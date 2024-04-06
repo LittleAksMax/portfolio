@@ -47,7 +47,7 @@ export const ProjectPage: FC = () => {
             }
         >
             <div className="project-contents">
-                {EntriesMap[projectId]}
+                { EntriesMap[projectId] }
             </div>
         </Page>
     );

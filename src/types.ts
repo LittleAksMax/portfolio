@@ -29,3 +29,8 @@ export interface ExperienceState {
     started: string;
     ended: string;
 }
+
+export type TagSelection = {
+    tag: string;
+    selected: boolean;
+}

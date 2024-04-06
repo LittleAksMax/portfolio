@@ -1,7 +1,6 @@
 import { ExperienceState, InitialState, ProjectState, ProjectType } from "../types";
-import logger from "../logging";
-import projectData from "../data/entries.json";
 import logging from "../logging";
+import projectData from "../data/entries.json";
 
 class ProjectRepo {
     private static _instance: ProjectRepo | null = null;
@@ -10,7 +9,7 @@ class ProjectRepo {
         if (!ProjectRepo._instance) {
             ProjectRepo._instance = new ProjectRepo();
         }
-        logger.debug("ProjectRepo", "tags:", ProjectRepo._instance.projects);
+        // logging.debug("ProjectRepo", "Projects:", ProjectRepo._instance.projects);
         return ProjectRepo._instance;
     }
 
@@ -57,6 +56,16 @@ class ProjectRepo {
             }
         })
     };
+
+    private tags: string[] = projectData["entries"]
+            .flatMap(entry => entry["tags"] // flatten tag entries
+                .map(tagName => tagName.toUpperCase())) // ensure consistent casing
+            .filter((tag, index, tags) => tags.indexOf(tag) === index); // remove duplicates
+
+    public getTags = (): string[] => {
+        // logging.debug("ProjectRepo", "Tags:", this.tags);
+        return this.tags;
+    }
 
     public getOfType = (type: ProjectType): (ProjectState | ExperienceState)[] => {
         return this.projects.entries.filter(proj => proj.type === type);

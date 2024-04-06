@@ -1,6 +1,6 @@
 import { FC, ReactNode, Children } from "react";
 import "./Banner.css";
-import logging from "../../logging";
+// import logging from "../../logging";
 
 interface BannerProps {
     title: string;
@@ -11,7 +11,7 @@ interface BannerProps {
 const Banner: FC<BannerProps> = ({ title, subtitle, children }: BannerProps) => {
     // this just asserts that there are exactly two children
     const childArray = Children.toArray(children);
-    logging.debug("Banner", "Children:", children);
+    // logging.debug("Banner", "Children:", children);
 
     return (
         <div id="banner">

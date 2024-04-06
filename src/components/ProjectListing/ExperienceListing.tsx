@@ -22,7 +22,7 @@ const ExperienceListing: FC<ExperienceListingProps> = ({ project }: ExperienceLi
             <td>
                 <div className="project-list-tags">
                     { project.tags.map(tagName =>
-                        <Tag name={ tagName } />
+                        <Tag key={`${project.id}-${tagName}`} name={ tagName } />
                     )}
                 </div>
             </td>
