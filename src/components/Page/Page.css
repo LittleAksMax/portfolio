@@ -12,7 +12,7 @@
 
 #content {
     margin-top: 360px;
-    z-index: 1000;
+    z-index: 2;
     position: relative;
     background-color: #F9F9F9;
 }

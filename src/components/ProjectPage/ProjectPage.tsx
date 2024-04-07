@@ -1,4 +1,4 @@
-import { FC, ReactNode, useState } from "react";
+import { FC } from "react";
 import { useParams } from "react-router-dom";
 import { ExperienceState, ProjectState, ProjectType } from "../../types";
 import NotFound from "../Status/NotFound";
@@ -8,12 +8,10 @@ import ProjectRepo from "../../db/ProjectRepo";
 import Page from "../Page/Page";
 import ExperienceBanner from "../Banner/ProjectBanner/ExperienceBanner";
 import ProjectContents from "./ProjectContents";
-import PageToggle from "./PageToggle";
 
 const createBanner = (
     projectType: ProjectType,
-    project: ProjectState | ExperienceState,
-    pageToggle: ReactNode
+    project: ProjectState | ExperienceState
 ) => {
     if (projectType === ProjectType.Experiences) {
         return (
@@ -23,7 +21,6 @@ const createBanner = (
                 started={(project as ExperienceState).started}
                 ended={(project as ExperienceState).ended}
                 tags={project.tags}
-                pageToggle={pageToggle}
             />
         );
     } else {
@@ -34,15 +31,16 @@ const createBanner = (
                 sourceUrl={(project as ProjectState).source}
                 accessUrl={(project as ProjectState).access}
                 tags={project.tags}
-                pageToggle={pageToggle}
             />
         );
     }
 }
 
-export const ProjectPage: FC = () => {
-    const [isOverview, setIsOverview] = useState<boolean>(true);
+interface ProjectPageProps {
+    pageType: "overview" | "details";
+}
 
+export const ProjectPage: FC<ProjectPageProps> = ({ pageType }: ProjectPageProps) => {
     const { type, projectId } = useParams();
 
     // ensure type route parameter is valid
@@ -61,15 +59,14 @@ export const ProjectPage: FC = () => {
         return <NotFound />;
     }
 
-    const pageToggle = <PageToggle isOverview={isOverview} setIsOverview={setIsOverview} />;
+    const overviewPage = EntriesMap[projectId].overview;
+    const detailsPage = EntriesMap[projectId].details;
 
     return (
-        <Page banner={createBanner(type, project, pageToggle)}>
-            <ProjectContents
-                isOverview={isOverview}
-                overview={EntriesMap[projectId].overview}
-                detailed={EntriesMap[projectId].details}
-            />
+        <Page banner={createBanner(type, project)}>
+            <ProjectContents>
+                { pageType === "overview" ? overviewPage : detailsPage}
+            </ProjectContents>
         </Page>
     );
 };

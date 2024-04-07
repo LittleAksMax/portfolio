@@ -2,15 +2,13 @@ import { FC, ReactNode } from "react";
 import "./ProjectContents.css";
 
 interface ProjectContentsProps {
-    isOverview: boolean;
-    overview: ReactNode;
-    detailed: ReactNode;
+    children?: ReactNode;
 }
 
-const ProjectContents: FC<ProjectContentsProps> = ({ isOverview, overview, detailed }: ProjectContentsProps) => {
+const ProjectContents: FC<ProjectContentsProps> = ({ children }: ProjectContentsProps) => {
     return (
         <div className="project-contents">
-            { isOverview ? overview : detailed }
+            { children }
         </div>
     );
 };

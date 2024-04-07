@@ -1,0 +1,38 @@
+.details-container, .overview-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.details-content, .overview-content {
+    padding-top: 50px;
+    width: 70%;
+}
+
+.details-content {
+    background-color: #F3F3F3;
+}
+
+.toggle-page-prompt {
+    color: #2B55AD;
+}
+
+.toggle-page-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10vh 0 10vh 0;
+    background-color: #B6C1D5;
+    width: 100%;
+}
+
+.toggle-page-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #2B55AD;
+    color: white;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}

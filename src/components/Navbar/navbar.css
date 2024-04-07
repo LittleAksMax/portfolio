@@ -9,6 +9,8 @@
     overflow: hidden;
     margin: 0;
     background-color: #DFE4E8;
+
+    z-index: 1000; /* stay above everything else */
 }
 
 #left-navbar {

@@ -1,4 +1,4 @@
-import { FC, ReactNode } from "react";
+import { FC } from "react";
 import Banner from "../Banner";
 import Tags from "../../tags/Tags";
 import ExperienceDates from "./ExperienceDates";
@@ -10,19 +10,16 @@ interface ExperienceBannerProps {
     started: string; // when did work experience start?
     ended: string; // when did work experience end?
     tags: string[];
-    pageToggle: ReactNode;
 }
 
-const ExperienceBanner: FC<ExperienceBannerProps> = ({ projectName, projectSubtitle, started, ended, tags, pageToggle }: ExperienceBannerProps) => {
+const ExperienceBanner: FC<ExperienceBannerProps> = ({
+    projectName, projectSubtitle, started, ended, tags
+}: ExperienceBannerProps) => {
     return (
         <Banner title={ projectName } subtitle={projectSubtitle}>
             <div className="project-data">
                 <Tags tags={ tags } />
                 <ExperienceDates started={ started } ended={ ended } />
-            </div>
-            <br />
-            <div className="page-toggle-container">
-                { pageToggle }
             </div>
         </Banner>
     );

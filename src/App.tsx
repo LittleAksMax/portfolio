@@ -18,7 +18,8 @@ const App: FC = () => {
                 <Route path={`/${ProjectType.Projects}`} element={<Projects />} />
                 <Route path={`/${ProjectType.Certifications}`} element={<Certifications />} />
                 <Route path="/dev" element={<Dev />} />
-                <Route path="/dev/:type/:projectId" element={<ProjectPage />} />
+                <Route path="/dev/:type/:projectId" element={<ProjectPage pageType="overview" />} />
+                <Route path="/dev/:type/:projectId/details" element={<ProjectPage pageType="details" />} />
 
                 <Route path="*" element={<NotFound />} />
             </Routes>
