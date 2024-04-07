@@ -1,7 +1,7 @@
 .sections {
-    padding: 50px 10% 50px 10%;
+    padding: 50px 5% 50px 5%;
     display: flex;
-    width: 80%;
+    width: 90%;
     height: 20vh;
     background-color: #ECEEF0;
 }
@@ -16,6 +16,7 @@
     transition: transform 0.5s ease;
     
     margin: 10px;
+    padding: 20px;
     position: relative;
     display: flex;
     align-items: center;
@@ -32,4 +33,11 @@
 .sections-section a {
     text-decoration: none;
     text-align: center;
+}
+
+/* Smaller screens should have slightly different layout */
+@media (max-width: 768px) {
+    .sections {
+        flex-direction: column; /* Change flex-direction to column for smaller screens */
+    }
 }
