@@ -61,6 +61,7 @@
                 "ReactJS",
                 "TS",
                 "JS",
+                "HTML",
                 "CSS"
             ],
             "type": "projects",
@@ -75,7 +76,8 @@
                 "C#",
                 "REST",
                 "PostgreSQL",
-                "ASP.NET Core"
+                "ASP.NET Core",
+                "JWT"
             ],
             "type": "certifications",
             "access": null,

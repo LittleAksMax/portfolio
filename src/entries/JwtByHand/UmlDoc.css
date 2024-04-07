@@ -1,0 +1,35 @@
+.uml-doc {
+    display: flex;
+    width: 100%;
+}
+
+.embedded-image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.image-container {
+    flex: 60%;
+    align-content: center;
+    justify-content: center;
+}
+
+.uml-description {
+    flex: 40%;
+    margin: 20px;
+    align-content: center;
+}
+
+/* Smaller screens should have slightly different layout */
+@media (max-width: 1000px) {
+    /* stack the UML diagrams if the screen gets too small */
+    .uml-doc {
+        flex-direction: column;
+    }
+
+    .image-container, .uml-description {
+        flex: 1;
+    }
+}

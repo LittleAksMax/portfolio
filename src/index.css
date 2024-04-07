@@ -4,8 +4,12 @@ body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
-    font-weight: 400px;
+    font-weight: 300;
     background-color: #ECEEF0;
+}
+
+code {
+    font-size: 20px;
 }
 
 h1 {
@@ -17,14 +21,6 @@ h1 {
 }
 
 h2 {
-    font-weight: 300;
-}
-
-a {
-    font-weight: 300;
-}
-
-p {
     font-weight: 300;
 }
 

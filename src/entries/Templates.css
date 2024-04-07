@@ -6,8 +6,8 @@
 }
 
 .details-content, .overview-content {
-    padding-top: 50px;
-    width: 70%;
+    padding: 30px;
+    width: 80%;
 }
 
 .details-content {
