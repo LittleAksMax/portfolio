@@ -9,7 +9,7 @@ interface SubprojectDefinitionProps {
 export const SubprojectDefinition: FC<SubprojectDefinitionProps> = ({ title, children }: SubprojectDefinitionProps) => (
     <div className="subproject-container">
         <div className="subproject-title">
-            <h2>{ title }</h2>
+            <h3>{ title }</h3>
         </div>
         <div className="subproject-description">
             { children }

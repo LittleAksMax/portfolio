@@ -70,7 +70,9 @@
                 "TS",
                 "JS",
                 "HTML",
-                "CSS"
+                "CSS",
+                "AWS",
+                "Docker"
             ],
             "type": "projects",
             "access": "https://portfolio.davidrosental.co.uk",

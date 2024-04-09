@@ -6,7 +6,11 @@ import "./WhoAmIFrame.css";
 const WhoAmIFrame: FC = () => (
     <div className="profile-card">
         <span className="profile-card-image">
-            <img className="profile-card-image" src="https://cdn.mos.cms.futurecdn.net/39CUYMP8vJqHAYGVzUghBX-1200-80.jpg" alt="Me" />
+            <img
+                className="profile-card-image"
+                src="/me.jpeg"
+                alt="Me"
+            />
         </span>
         <div className="profile-card-content">
             <i className="profile-card-email">david2005.rosental.work@gmail.com</i>
