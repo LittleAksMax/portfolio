@@ -6,7 +6,7 @@ import Banner from "../components/Banner/Banner";
 
 const Certifications: FC = () => {
     return (
-        <Page banner={<Banner title="Certifications" />}>
+        <Page banner={<Banner title="Courses and Certifications" />}>
             <ProjectList type={ProjectType.Certifications} />
         </Page>
     );

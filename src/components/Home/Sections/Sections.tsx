@@ -17,7 +17,7 @@ const Sections: FC = () => {
             </div>
             <div className="sections-section">
                 <a href={`/${ProjectType.Certifications}`}>
-                    <h1>Certifications</h1>
+                    <h1>Courses and Certifications</h1>
                 </a>
             </div>
         </div>
