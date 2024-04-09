@@ -13,7 +13,7 @@ const About: FC = () => {
                     </div>
                     <div className="about-text">
                         <h2 className="about-section-heading">Who I am</h2>
-                        <p>Hello, I'm <b>David Rosental</b>, a British-Hungarian computer science student at the <b>University of Warwick</b>. I am in my 1st year of my <a href="https://warwick.ac.uk/fac/sci/dcs/teaching/courses/"><b>4 year MEng course</b></a>.</p>
+                        <p>Hello, I'm <b>David Rosental</b>, a computer science student at the <b>University of Warwick</b>. I am in my 1st year of my <a href="https://warwick.ac.uk/fac/sci/dcs/teaching/courses/"><b>4 year MEng course</b></a>.</p>
                     </div>
                 </div>
             </div>

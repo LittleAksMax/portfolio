@@ -1,0 +1,14 @@
+.demo-image-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 50px;
+    align-items: center;
+}
+
+.demo-image {
+    height: auto;
+    object-fit: contain;
+    margin: 20px 10% 20px 10%;
+    width: 80%;
+}

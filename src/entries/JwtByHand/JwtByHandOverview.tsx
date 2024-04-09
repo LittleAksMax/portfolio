@@ -7,52 +7,55 @@ const JwtByHandOverview: FC = () => {
             <h2>Why did I build this?</h2>
 
             <p>
-                Nowadays, it seems that JSON Web Token authentication is the standard
-                go-to method for implementing authentication in scalable REST APIs. Most
-                tutorials and projects that use JWT end up using a module or library that
-                completely abstracts away the actual handling of the web token, and hides
-                it behind function decorators in Python (like in <a href="https://flask.palletsprojects.com/en/3.0.x/">Flask</a>'s
-                JWT and general authentication extensions) or under method attributes in C#
-                (like in <a href="https://dotnet.microsoft.com/en-us/apps/aspnet">ASP.NET Core</a>)
-                with some basic boilerplate that isn't explained very well in most tutorials.
+                In the current landscape of web development, JSON Web Token (JWT)
+                authentication stands as a fundamental concept for securing Web APIs.
+                Despite its widespread adoption, most learning resources and projects
+                gravitate towards leveraging pre-built libraries or modules. These tools,
+                while accelerating development, obscure the underlying mechanics of JWT
+                handling with layers of abstraction, like Python's function decorators
+                in <a href="https://flask.palletsprojects.com/en/3.0.x/">Flask</a> or method
+                attributes in <a href="https://dotnet.microsoft.com/en-us/apps/aspnet">ASP.NET Core</a>.
+                This approach, although efficient, offers limited educational value for those new to
+                the concept of JWT.
             </p>
 
             <p>
-                In my eyes, although this abstraction of the method is incredibly useful
-                for development speed, it isn't ideal for someone that is new to a concept
-                and is simply trying to understand it.
-                This project allowed me to aggregate a lot of my programming skills to
-                create a small module that applies a new piece of technology I had
-                just recently been acquainted with.
+                I firmly believe implementing concepts from the ground up makes for a great learning
+                experience, and really allows the concept to stick in my brain. Delving deep into
+                JWT's intricacies allowed me to confront and navigate the challenges inherent in
+                its implementation, turning each obstacle into a learning opportunity.
+            </p>
+
+            <h2>Reflections and Next Steps</h2>
+
+            <p>
+                The focus of the project was on developing a scalable, yet comprehensible,
+                JWT authentication system. While the initial implementation centers around
+                the <i>HS256 hashing algorithm</i>, the architecture of the module invites
+                further exploration and integration of other algorithms, demonstrating
+                the system's extensibility.
             </p>
 
             <p>
-                For me, implementing concepts from the ground up makes for a great learning
-                experience, and really allows the concept to stick in my brain. This is especially
-                due to how much time I end up spending having to really look at the problem
-                through a microscope. When thinking about how to implement certain feature, I
-                end up spending a lot of time on it.
-            </p>
-
-            <h2>Possible next steps</h2>
-
-            <p>
-                Although the module is made to be easily extensible, I only implemented usage
-                of HS256 hashing algorithm.
+                One deliberate omission was the implementation of refresh tokens.
+                Given their validation principles closely mirror those of access tokens,
+                which were already covered, I chose to concentrate on the core aspects
+                of JWT management.
             </p>
 
             <p>
-                I make a note about not implementing refresh tokens. I did not include
-                refresh tokens in this project because they are validated along a similar
-                principle to the access tokens I did already implement.
+                Another consideration was the development of a user interface.
+                Although creating such an interface would make the project more rounded,
+                it risked veering off into replicating existing solutions
+                like <a href="https://jwt.io">jwt.io</a>, diverting focus from the
+                project's primary objectives.
             </p>
 
             <p>
-                I could have also created a user interface for the program that makes
-                use of the module to make it a more complete project. However, that would
-                have effectively just been a clone of <a href="https://jwt.io/">jwt.io</a>.
-                I also didn't see a point in investing time in something that was not my
-                intended goal with the project.
+                Looking ahead, there are avenues for expansion, such as exploring additional
+                hashing algorithms and considering the integration of refresh tokens.
+                However, the project's essence lies not in its feature set but in the depth of
+                understanding it fosters about JWT authentication.
             </p>
         </OverviewTemplate>
     );

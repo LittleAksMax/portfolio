@@ -1,4 +1,4 @@
-import { FC, useState, useEffect } from "react";
+import { FC, useState } from "react";
 import { ExperienceState, ProjectState, ProjectType, TagSelection } from "../../types";
 import ProjectRepo from "../../db/ProjectRepo";
 import ProjectListing from "../ProjectListing/ProjectListing";
@@ -13,33 +13,10 @@ interface ProjectListProps {
 }
 
 const ProjectList: FC<ProjectListProps> = ({ type, tagFilter }: ProjectListProps) => {
-    const [projects, setProjects] = useState<(ProjectState | ExperienceState)[]>([]);
+    const [projects] = useState<(ProjectState | ExperienceState)[]>(
+        ProjectRepo.getInstance().getOfType(type)
+    );
     
-    useEffect(() => {
-        const activeTags = tagFilter
-            ?.filter(selection => selection.selected)
-            .map(selectedTag => selectedTag.tag);
-
-        setProjects(ProjectRepo
-            .getInstance()
-            .getOfType(type)
-            .filter(entry => {
-                // if no filter defined, just ignore the filter
-                if (activeTags === undefined) {
-                    return true;
-                }
-
-                // if the tag list includes a single active tag, we should include it
-                for (const tag of entry.tags) {
-                    if (activeTags.includes(tag.toUpperCase())) {
-                        return true;
-                    }
-                }
-
-                return false;
-            }));
-    }, [tagFilter, type]);
-
     return (
         <table className="project-table">
             <tbody>

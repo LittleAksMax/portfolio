@@ -7,11 +7,15 @@
 
 .details-content, .overview-content {
     padding: 30px;
-    width: 80%;
 }
 
 .details-content {
     background-color: #F3F3F3;
+    width: 80%;
+}
+
+.overview-content {
+    width: 60%;
 }
 
 .toggle-page-prompt {

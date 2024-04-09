@@ -12,10 +12,11 @@ const JwtByHandDetails: FC = () => {
             <h2>What was this built with?</h2>
 
             <p>
-                I built the project in <b>Typescript</b> because I wanted to leverage how
-                well Javascript based languages handle JSON natively. This avoided
-                any need to convert between the implementation languages built-in data
-                structures and JSON. This let me get straight into the thick of it.
+                The decision to build the JWT implementation from scratch in <b>Typescript</b> was
+                driven by the language's native handling of JSON, streamlining the integration of
+                JWT's JSON-based tokens without the need for converting data structures.
+                This approach allowed for a direct dive into the nuances of JWT, bypassing the
+                overhead typically associated with language-specific data handling quirks.
             </p>
 
             <h2>Structure of project</h2>
@@ -24,20 +25,19 @@ const JwtByHandDetails: FC = () => {
                 I split the project into three main components.
             </p>
 
-            <ul>
-                <li><b>JWT module</b> -- contains the 'business logic' for generating the access tokens, encoding them and decoding them.</li>
-                <li><b>API module</b> -- mocks a minimal RESTful data API with a controller that makes use of the authentication module's services to verify tokens.</li>
-                <li><b>Auth module</b> -- mocks a minimal RESTful authentication API with a controller that can register and login users. It also defines a service that is used to verify and generate tokens.</li>
-            </ul>
-
             <h4>The JWT Module</h4>
 
             <UmlDoc href={jwtModuleHref}>
                 <p>
-                    The <code>TokenVerifier</code> and <code>TokenFactory</code> classes
-                    are used to carry out the JWT's required functionality: <b>creation</b> and <b>verification</b>.
-                    This objects both have a <code>HashMediator</code> injected into them, to choose
-                    the used hashing algorithm.
+                    This cornerstone of the project encapsulates
+                    the essential logic for JWT manipulation, including token generation,
+                    encoding, and decoding. It leverages two primary classes: <code>TokenVerifier</code>
+                    and <code>TokenFactory</code>, both of which interact with a <code>HashMediator</code>.
+                    This mediator facilitates the flexible selection of hashing algorithms,
+                    accommodating various security requirements.
+                    I also created <code>Encoder</code> and <code>Decoder</code> classes to
+                    encapsulate the functionality for creating and verifying the access tokens from
+                    those classes.
                 </p>
             </UmlDoc>
 
@@ -45,14 +45,11 @@ const JwtByHandDetails: FC = () => {
 
             <UmlDoc href={authModuleHref}>
                 <p>
-                    The authentication module makes use of the JWT module to mock how an API would verify
-                    JWT access keys. The <code>IdentityController</code> is in charge of authentication and
-                    authorisation (although this would often be separated out in a real API).
-                </p>
-                <p>
-                    The controller has the <code>UserService</code> injected for managing users in
-                    the in-memory database (since I didn't need a robust data storage solution for
-                    this project). It also has the <code>IdentityService</code> for signing tokens.
+                    Designed to simulate a authentication flow, this module uses the JWT
+                    module to validate JWT access tokens. The <code>IdentityController</code> serves
+                    as the central entity for authentication and authorisation processes,
+                    interfaced with a <code>UserService</code> for user management and an
+                    <code>IdentityService</code> for token operations.
                 </p>
             </UmlDoc>
 
@@ -60,37 +57,34 @@ const JwtByHandDetails: FC = () => {
 
             <UmlDoc href={apiModuleHref}>
                 <p>
-                    This module contains a simple <code>DataController</code> that
-                    interacts with an in-memory database. The <code>IdentityService</code> from
-                    the authentication module is injected into the controller, so it can
-                    verify incoming tokens.
+                    This module simulates a minimalistic RESTful API, incorporating
+                    a <code>DataController</code> that interacts with an in-memory database
+                    for data operations. The integration with the <code>IdentityService</code> ensures
+                    that incoming tokens are appropriately verified.
                 </p>
             </UmlDoc>
 
-            <h2>What did I learn?</h2>
+            <h2>Challenges and Insights</h2>
 
             <p>
-                I used this project as a change to take advantage of the <b>Design
-                Patterns</b> I had recently read about in the book 'Design Patterns
-                Elements of Reusable Object-Oriented Software'
-                (<a href="https://www.google.co.uk/books/edition/Design_Patterns/6oHuKQe3TjQC?hl=en&gbpv=0&kptab=overview">Google books link</a>).
-                This project was a good place to practice applying these design patterns on a small scale.
+                Embarking on this project from scratch introduced a range of challenges,
+                notably the intricate details of JWT and the nuances of secure token
+                handling. This journey not only reinforced the importance of robust
+                security practices but also offered a hands-on opportunity to explore
+                the depths of stateless authentication mechanisms.
             </p>
 
             <p>
-                I ended up making use of the following patterns:
+                A significant aspect of this project was the application of design patterns,
+                inspired by the seminal work "Design Patterns: Elements of Reusable Object-Oriented
+                Software". (<a href="https://www.google.co.uk/books/edition/Design_Patterns/6oHuKQe3TjQC?hl=en&gbpv=0&kptab=overview">Google books link</a>)
+                The patterns adopted in this project include:
             </p>
 
             <ul>
-                <li><b>Factory</b> -- for generating tokens.</li>
-                <li><b>Mediator</b> -- make it easy to choose between any possible hashing algorithms. Each hashing algorithm needs to have a corresponding <code>IHashHandler</code> implementation.</li>
+                <li><b>Factory</b> -- Utilised for the dynamic generation of tokens, facilitating a clean and modular approach to token creation.</li>
+                <li><b>Mediator</b> -- Implemented to streamline the selection process among various hashing algorithms, ensuring that each algorithm's implementation could be easily swapped or extended without widespread modifications.</li>
             </ul>
-
-            <p>
-                This project, although not a full-stack application, definitely achieved
-                its goal of being a fulfilling learning experience. I learned about how JWT
-                works, since I had to do a decent amount of extra reading on the topic.
-            </p>
         </DetailsTemplate>
     );
 };
