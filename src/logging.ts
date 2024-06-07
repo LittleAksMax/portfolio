@@ -19,4 +19,6 @@ const debug = (namespace: string, msg: string, object?: any) => {
     console.debug(`[${getTimeStamp()}] [DEBUG] [${namespace}] ${msg}`, object ? object : "");
 }
 
-export default { info, warn, error, debug };
+const logger = { info, warn, error, debug };
+
+export default logger;

@@ -1,9 +1,9 @@
 .even-section {
-    background-color: #ECEEF0;
+    background-color: var(--primary-bg-color);
 }
 
 .odd-section {
-    background-color: #E7E9EB;
+    background-color: var(--secondary-bg-color);
 }
 
 #about {
@@ -22,15 +22,23 @@
     display: flex;
     width: 60%;
     justify-content: space-between;
+    align-items: center;
     margin: 0 auto; /* This centers the div */
 }
 
+.about-section-content:first-child {
+    padding-top: 50px;
+}
+
 .about-text, .about-frame-container {
-    padding: 20px;
+    display: flex;
+    padding: 0 20px 0 20px;
+    flex-flow: column nowrap;
+    align-content: center;
 }
 
 .about-text {
-    flex: 60%;
+    flex: 70%; /* take up 70% of parent's flexbox */
 }
 
 .about-frame-container {
@@ -44,12 +52,29 @@
 }
 
 .about-section h2 {
-    color: #2B55AD;
+    color: var(--text-highlight-color);
 }
 
 /* Smaller screens should have slightly different layout */
-@media (max-width: 1200px) {
+@media only screen and (min-width: 900px) and (max-width: 1200px) {
     .about-section-content {
         width: 90%;
+    }
+}
+
+@media only screen and (max-width: 899px) {
+    .about-section-content {
+        flex-direction: column;
+        justify-content: flex-start; /* so they are more compact */
+        width: 90%;
+    }
+
+    /*
+     * Because the even sections have the div holding the heading
+     * for the section on the other side, but the heading should go
+     * on top when stacked.
+     */
+    .even-section .about-section-content {
+        flex-direction: column-reverse;
     }
 }

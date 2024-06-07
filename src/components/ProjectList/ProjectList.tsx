@@ -1,8 +1,8 @@
 import { FC, useState } from "react";
 import { ExperienceState, ProjectState, ProjectType, TagSelection } from "../../types";
 import ProjectRepo from "../../db/ProjectRepo";
-import ProjectListing from "../ProjectListing/ProjectListing";
-import ExperienceListing from "../ProjectListing/ExperienceListing";
+import ProjectCard from "../ProjectCard/ProjectCard";
+import ExperienceCard from "../ProjectCard/ExperienceCard";
 import "./ProjectList.css";
 
 interface ProjectListProps {
@@ -18,23 +18,21 @@ const ProjectList: FC<ProjectListProps> = ({ type, tagFilter }: ProjectListProps
     );
     
     return (
-        <table className="project-table">
-            <tbody>
-                {projects.map(proj => (
-                        proj.type === ProjectType.Experiences ?
-                            <ExperienceListing
-                                key={`${proj.id}-projlisting`}
-                                project={proj as ExperienceState}
-                            />
-                        :
-                            <ProjectListing
-                                key={`${proj.id}-projlisting`}
-                                project={proj as ProjectState}
-                            />
-                    )
-                )}
-            </tbody>
-        </table>
+        <div className="project-list">
+            {projects.map(proj => (
+                    proj.type === ProjectType.Experiences ?
+                        <ExperienceCard
+                            key={`${proj.id}-card`}
+                            project={proj as ExperienceState}
+                        />
+                    :
+                        <ProjectCard
+                            key={`${proj.id}-card`}
+                            project={proj as ProjectState}
+                        />
+                )
+            )}
+        </div>
     );
 };
 

@@ -7,13 +7,14 @@ interface CertificationProps {
 
 const Certification: FC<CertificationProps> = ({ src }: CertificationProps) => (
     <div className="image-container">
-        <div className="certification-container">
+        <figure className="certification-container">
             <img
                 className="certification"
                 src={src}
                 alt="Certification"
             />
-        </div>
+            <figcaption hidden>Certificate of Completion</figcaption>
+        </figure>
     </div>
 );
 

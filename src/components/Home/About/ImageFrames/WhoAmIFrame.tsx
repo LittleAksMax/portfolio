@@ -5,21 +5,22 @@ import "./WhoAmIFrame.css";
 
 const WhoAmIFrame: FC = () => (
     <div className="profile-card">
-        <span className="profile-card-image">
+        <div className="profile-card-image">
             <img
                 className="profile-card-image"
                 src="/me.jpeg"
                 alt="Me"
             />
-        </span>
+        </div>
         <div className="profile-card-content">
-            <i className="profile-card-email">david2005.rosental.work@gmail.com</i>
+            <div className="profile-card-email-container">
+                <i className="profile-card-email">david2005.rosental.work@gmail.com</i>
+            </div>
             <div className="link-icon-container">
                 <a className="social-link" href="https://www.linkedin.com/in/david-rosental/"><FontAwesomeIcon icon={faLinkedin} size="2x" color="#0A66C2" /></a>
                 <a className="social-link" href="https://github.com/LittleAksMax"><FontAwesomeIcon icon={faGithub} size="2x" color="black" /></a>
             </div>
         </div>
-
     </div>
 );
 

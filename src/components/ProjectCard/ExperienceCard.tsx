@@ -2,13 +2,14 @@ import { FC } from "react";
 import { ExperienceState } from "../../types";
 import ExperienceDates from "../Banner/ProjectBanner/ExperienceDates";
 import Tag from "../tags/Tag";
-import "./Listing.css";
+import "./Card.css";
+import "./ExperienceCard.css";
 
-interface ExperienceListingProps {
+interface ExperienceCardProps {
     project: ExperienceState;
 }
 
-const ExperienceListing: FC<ExperienceListingProps> = ({ project }: ExperienceListingProps) => {
+const ExperienceCard: FC<ExperienceCardProps> = ({ project }: ExperienceCardProps) => {
     return (
         <tr className="project-row">
             <td>
@@ -30,4 +31,4 @@ const ExperienceListing: FC<ExperienceListingProps> = ({ project }: ExperienceLi
     );
 };
 
-export default ExperienceListing;
+export default ExperienceCard;

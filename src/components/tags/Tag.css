@@ -8,5 +8,5 @@
     text-decoration: none;
     color: white;
     display: inline-block;
-    background-color: #2B55AD;
+    background-color: var(--text-highlight-color);
 }

@@ -18,7 +18,7 @@ const RestApiCourseDetails: FC = () => {
             <h3>Structuring and Architecture of REST APIs</h3>
 
             <ul>
-                <li>Implementing the <b>Controller-Service-Repository pattern</b> for clear separation of concerns.</li>
+                <li>Implementing the <strong>Controller-Service-Repository pattern</strong> for clear separation of concerns.</li>
                 <li>Encapsulating business logic, and API interfaces in separate, independent modules.</li>
                 <li>Organising API contracts to promote reuse and maintainability.</li>
                 <li>Ensuring single responsibility for controllers and structuring endpoints effectively.</li>
@@ -27,29 +27,29 @@ const RestApiCourseDetails: FC = () => {
             <h3>Security Implementations</h3>
             <ul>
                 <li>Implementation of JWT authentication and claim-based authorisation.</li>
-                <li>Strategies for <b>API Key-based authentication</b>.</li>
-                <li>Combined authentication methods for <b>multiple auth</b></li>
+                <li>Strategies for <strong>API Key-based authentication</strong>.</li>
+                <li>Combined authentication methods for <strong>multiple auth</strong></li>
             </ul>
 
             <h3>Advanced API Features:</h3>
             <ul>
-                <li>Implementing <b>filtering</b>, <b>sorting</b>, and <b>pagination</b> to enhance API usability.</li>
-                <li>Applying <b>HATEOAS</b> (Hypertext As The Engine Of Application State) for self-discoverable APIs. I applied this for the next and previous page links for pagination.</li>
-                <li>Multiple approaches to <b>API versioning</b> and their best practices.</li>
-                <li>Integrating <b>health checks</b> to ensure that the API's health is discoverable.</li>
-                <li>Implemented <b>response caching</b> (client-side) and <b>output caching</b> (server-side).</li>
+                <li>Implementing <strong>filtering</strong>, <strong>sorting</strong>, and <strong>pagination</strong> to enhance API usability.</li>
+                <li>Applying <strong>HATEOAS</strong> (Hypertext As The Engine Of Application State) for self-discoverable APIs. I applied this for the next and previous page links for pagination.</li>
+                <li>Multiple approaches to <strong>API versioning</strong> and their best practices.</li>
+                <li>Integrating <strong>health checks</strong> to ensure that the API's health is discoverable.</li>
+                <li>Implemented <strong>response caching</strong> (client-side) and <strong>output caching</strong> (server-side).</li>
             </ul>
 
             <h3>Swagger Documentation</h3>
             <ul>
-                <li>Utilising <b>Swagger</b> (OpenAPI) for comprehensive API documentation.</li>
+                <li>Utilising <strong>Swagger</strong> (OpenAPI) for comprehensive API documentation.</li>
                 <li>Integrating authentication mechanisms, query parameters, body parameters, possible responses, and the structure of response messages.</li>
             </ul>
             
             <h3>SDK Development</h3>
 
             <ul>
-                <li>Created an <b>SDK</b> for the Web API using <b>Refit</b>.</li>
+                <li>Created an <strong>SDK</strong> for the Web API using <strong>Refit</strong>.</li>
                 <li>Utilising <code>HttpClient</code> for maintaining access tokens, facilitating fluid API interactions.</li>
             </ul>
 

@@ -1,9 +1,11 @@
 .date-container {
+    --date-text-color: #7E7E7E;
+
     padding-right: 20px;
 }
 
 .start-date, .end-date, .date-separator {
-    color: #7E7E7E;
+    color: var(--date-text-color);
     font-style: italic;
     padding: 5px;
 }

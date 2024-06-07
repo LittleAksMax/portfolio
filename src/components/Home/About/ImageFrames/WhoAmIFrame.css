@@ -1,9 +1,10 @@
 #whoami-frame {
-    border: 1px solid #ccc;
+    border: 1px solid #CCC;
     border-radius: 8px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 100%;
     max-width: 320px;
     margin: auto;
@@ -11,6 +12,7 @@
 }
 
 .profile-card-image {
+    display: inline;
     width: 100%;
     height: auto;
     object-fit: contain;
@@ -27,9 +29,9 @@
 
 .social-link {
     text-decoration: none;
-    margin: 5px 5px; /* Optional: Add some space around icons */
+    margin: 5px 5px;
 }
 
-.profile-card-email {
+.profile-card-email-container {
     text-align: center;
 }

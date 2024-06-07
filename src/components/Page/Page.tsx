@@ -3,6 +3,7 @@ import Navbar from "../Navbar/Navbar";
 import Banner from "../Banner/Banner";
 import ProjectBanner from "../Banner/ProjectBanner/ProjectBanner";
 import "./Page.css";
+import Footer from "../Footer/Footer";
 
 interface PageProps {
     banner: ReactElement<typeof Banner> | ReactElement<typeof ProjectBanner>;
@@ -15,10 +16,15 @@ const Page: FC<PageProps> = ({ banner, children }: PageProps) => {
     return (
         <>
             <Navbar />
-            { banner }
-            <div id="content">
+            <header>
+                { banner }
+            </header>
+            <main id="content">
                 { childArray.map((child, _) => child) }
-            </div>
+            </main>
+            <footer>
+                <Footer />
+            </footer>
         </>
     )
 }

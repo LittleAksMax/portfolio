@@ -16,9 +16,9 @@ const AwsFundamentalsCSharpOverview: FC = () => {
             </p>
 
             <p>
-                With <b>cloud computing</b> being on a rapid rise in the last few years, I
+                With <strong>cloud computing</strong> being on a rapid rise in the last few years, I
                 thought it was a great time to get introduced to the concept and get some
-                meaningful familiarity with cloud platforms. <b>AWS</b> was the natural
+                meaningful familiarity with cloud platforms. <strong>AWS</strong> was the natural
                 choice because of how large a fraction of the market they take up.
             </p>
             
@@ -26,7 +26,7 @@ const AwsFundamentalsCSharpOverview: FC = () => {
                 The AWS Fundamentals Course with C# by Nick Chapsas offers a comprehensive
                 introduction to integrating AWS services into general applications using C#.
                 By covering essential services
-                like <b>S3</b>, <b>SQS</b>, <b>SNS</b>, <b>Secrets Manager</b>, <b>DynamoDB</b>, and <b>Lambda</b>, the
+                like <strong>S3</strong>, <strong>SQS</strong>, <strong>SNS</strong>, <strong>Secrets Manager</strong>, <strong>DynamoDB</strong>, and <strong>Lambda</strong>, the
                 course lays a solid foundation for cloud solutions. With a focus on best practices,
                 practical applications, and hands-on learning, I felt well-equipped to take my first
                 steps in leveraging cloud technologies in future projects.
@@ -35,20 +35,20 @@ const AwsFundamentalsCSharpOverview: FC = () => {
             <h2>Why did I choose this course?</h2>
 
             <p>
-                <b>Best Practices and Practical Applications:</b> The course emphasises 
+                <strong>Best Practices and Practical Applications:</strong> The course emphasises 
                 real-world applications and best configurations of AWS services within
                 the context of C# development, guiding through best practices to ensure
                 clean code architecture and secure management of the services.
             </p>
 
             <p>
-                <b>Hands-On Approach:</b> Through practical demonstrations and hands-on
+                <strong>Hands-On Approach:</strong> Through practical demonstrations and hands-on
                 exercises, I gained firsthand experience in configuring and
                 deploying basic AWS services using C#.
             </p>
 
             <p>
-                <b>Focus on Free Tier Services:</b> All services introduced in the course
+                <strong>Focus on Free Tier Services:</strong> All services introduced in the course
                 fall within AWS's free tier (with the exception of Secrets Manager),
                 making it accessible to experiment and learn without the worry
                 of incurring additional costs. Furthermore, the course itself was free to
@@ -56,11 +56,11 @@ const AwsFundamentalsCSharpOverview: FC = () => {
             </p>
 
             <p>
-                <b>Foundation for Cloud Solutions:</b> This course serves as a stepping
+                <strong>Foundation for Cloud Solutions:</strong> This course serves as a stepping
                 stone for looking to dive deeper into cloud computing, providing the
                 essential knowledge needed to explore more complex AWS services and
                 architectures. It also set me up for exploring other cloud platforms
-                like <b>Microsoft Azure</b> and <b>GCP</b> because the course covered
+                like <strong>Microsoft Azure</strong> and <strong>GCP</strong> because the course covered
                 concepts that are present in every major cloud platform.
             </p>
 

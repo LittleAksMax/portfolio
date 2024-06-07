@@ -4,23 +4,26 @@ import './Sections.css';
 
 const Sections: FC = () => {
     return (
-        <div className="sections">
-            <div className="sections-section">
-                <a href={`/${ProjectType.Experiences}`}>
+        <section className="sections">
+            <a href={`/${ProjectType.Experiences}`} className="sections-section sections-section-link">
+                <div>
                     <h1>Work Experiences</h1>
-                </a>
-            </div>
-            <div className="sections-section">
-                <a href={`/${ProjectType.Projects}`}>
+                </div>
+            </a>
+
+            <a href={`/${ProjectType.Projects}`} className="sections-section sections-section-link">
+                <div>
                     <h1>Personal Projects</h1>
-                </a>
-            </div>
-            <div className="sections-section">
-                <a href={`/${ProjectType.Certifications}`}>
+                </div>
+            </a>
+            
+            <a href={`/${ProjectType.Certifications}`} className="sections-section sections-section-link">
+                <div>
                     <h1>Courses and Certifications</h1>
-                </a>
-            </div>
-        </div>
+                </div>
+            </a>
+            
+        </section>
     );
 };
 

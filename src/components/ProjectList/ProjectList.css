@@ -1,19 +1,4 @@
 .project-table {
     width: 100%;
-    border-collapse: collapse;
-    background-color: #ECEEF0;
-}
-
-.project-row td {
-    text-align: center;
-    padding: 8px;
-    border-bottom: 1px solid #DDD;
-}
-
-.project-row td:first-child {
-    width: 50%; /* Adjust according to your content */
-}
-  
-.project-row td:last-child {
-    width: 50%; /* Adjust according to your content */
+    background-color: var(--primary-bg-color);
 }

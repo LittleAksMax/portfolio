@@ -16,9 +16,11 @@ export const DetailsTemplate: FC<DetailsProps> = ({ children, showOverviewPrompt
     const hrefToOverview = href.substring(0, href.length - "/details".length);
     
     return (
-        <div className="details-container">
-            <div className="details-content">
-                { children }
+        <div className="template-container">
+            <div className="details-container">
+                <article className="details-content">
+                    { children }
+                </article>
             </div>
             <div className="toggle-page-container">
                 <CrossLink togglePrompt={showOverviewPrompt} href={hrefToOverview} />
@@ -36,9 +38,11 @@ export const OverviewTemplate: FC<OverviewProps> = ({ children, showDetailsPromp
     const hrefToDetails = window.location.href + "/details";
 
     return (
-        <div className="overview-container">
-            <div className="overview-content">
-                { children }
+        <div className="template-container">
+            <div className="overview-container">
+                <article className="overview-content">
+                    { children }
+                </article>
             </div>
             <div className="toggle-page-container">
                 <CrossLink togglePrompt={showDetailsPrompt} href={hrefToDetails} />

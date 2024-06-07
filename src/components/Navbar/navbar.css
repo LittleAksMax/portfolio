@@ -8,7 +8,7 @@
     justify-content: space-between;
     overflow: hidden;
     margin: 0;
-    background-color: #DFE4E8;
+    background-color: var(--navbar-bg-color);
 
     z-index: 1000; /* stay above everything else */
 }
@@ -28,7 +28,7 @@
 
 #navbar li > a {
     display: block;
-    color: #2B55AD;
+    color: var(--text-highlight-color);
     font-family: monospace;
     text-align: center;
     padding: 20px 10px;

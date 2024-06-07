@@ -12,7 +12,7 @@ const JwtByHandDetails: FC = () => {
             <h2>What was this built with?</h2>
 
             <p>
-                The decision to build the JWT implementation from scratch in <b>Typescript</b> was
+                The decision to build the JWT implementation from scratch in <strong>Typescript</strong> was
                 driven by the language's native handling of JSON, streamlining the integration of
                 JWT's JSON-based tokens without the need for converting data structures.
                 This approach allowed for a direct dive into the nuances of JWT, bypassing the
@@ -82,8 +82,8 @@ const JwtByHandDetails: FC = () => {
             </p>
 
             <ul>
-                <li><b>Factory</b> -- Utilised for the dynamic generation of tokens, facilitating a clean and modular approach to token creation.</li>
-                <li><b>Mediator</b> -- Implemented to streamline the selection process among various hashing algorithms, ensuring that each algorithm's implementation could be easily swapped or extended without widespread modifications.</li>
+                <li><strong>Factory</strong> -- Utilised for the dynamic generation of tokens, facilitating a clean and modular approach to token creation.</li>
+                <li><strong>Mediator</strong> -- Implemented to streamline the selection process among various hashing algorithms, ensuring that each algorithm's implementation could be easily swapped or extended without widespread modifications.</li>
             </ul>
         </DetailsTemplate>
     );

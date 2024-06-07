@@ -63,16 +63,19 @@
         },
         {
             "id": "portfolio",
-            "name": "Portfolio",
+            "name": "Personal Portfolio",
             "brief": "My personal portfolio website which I use to showcase my projects and experiences.",
             "tags": [
-                "ReactJS",
-                "TS",
-                "JS",
+                "React",
+                "Typescript",
+                "Javascript",
                 "HTML",
                 "CSS",
                 "AWS",
-                "Docker"
+                "EC2",
+                "ECR",
+                "Docker",
+                "Frontend"
             ],
             "type": "projects",
             "access": "https://portfolio.davidrosental.co.uk",

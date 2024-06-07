@@ -1,13 +1,13 @@
 import { FC } from "react";
 import { ProjectState } from "../../types";
-import "./Listing.css";
+import "./Card.css";
 import Tag from "../tags/Tag";
 
 interface ProjectLinkProps {
     project: ProjectState
 }
 
-const ProjectListing: FC<ProjectLinkProps> = ({ project }: ProjectLinkProps) => {
+const ProjectCard: FC<ProjectLinkProps> = ({ project }: ProjectLinkProps) => {
     return (
         <tr className="project-row">
             <td>
@@ -24,4 +24,4 @@ const ProjectListing: FC<ProjectLinkProps> = ({ project }: ProjectLinkProps) => 
     );
 };
 
-export default ProjectListing;
+export default ProjectCard;

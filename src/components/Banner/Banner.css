@@ -1,12 +1,15 @@
 #banner {
-    display: flex; /* Changed from inline-block to flex */
-    flex-direction: column; /* Stacks children vertically */
+    --banner-bg-color: #DFE4E8;
+    --banner-dot-color: #C0C0C0;
+    
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    height: 300px;
+    min-height: 150px;
     box-sizing: border-box;
-    background-color: #DFE4E8;
+    background-color: var(--banner-bg-color);
     background-size: 20px 20px;
-    background-image: radial-gradient(circle, #C0C0C0 0.5px, transparent 10%);
+    background-image: radial-gradient(circle, var(--banner-dot-color) 0.5px, transparent 10%);
 }
 
 .banner-container {

@@ -2,14 +2,27 @@
     padding: 50px 5% 50px 5%;
     display: flex;
     width: 90%;
-    height: 20vh;
-    background-color: #ECEEF0;
+    min-height: 20vh;
+    background-color: var(--primary-bg-color);
+}
+
+.sections-section-link {
+    text-decoration: none;
+}
+
+.sections-section-link:hover {
+    border: none;
+    z-index: 1;
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
 .sections-section {
+    flex: 1; /* take up whole parent flexbox width */
+    
+
     border: #18181810 solid;
-    flex: 1;
-    background-color: #F9F9F9;
+    background-color: var(--section-bg-color);
     background-size: 80%;
     background-position: center;
     background-repeat: no-repeat;
@@ -17,27 +30,20 @@
     
     margin: 10px;
     padding: 20px;
-    position: relative;
+
+
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.sections-section:hover {
-    border: none;
-    z-index: 1;
-    transform: scale(1.05);
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-}
-
-.sections-section a {
-    text-decoration: none;
-    text-align: center;
-}
-
 /* Smaller screens should have slightly different layout */
-@media (max-width: 768px) {
+@media (max-width: 899px) {
     .sections {
         flex-direction: column; /* Change flex-direction to column for smaller screens */
+    }
+
+    .sections-section {
+        margin: 5px;
     }
 }

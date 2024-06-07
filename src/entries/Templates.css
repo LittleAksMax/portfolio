@@ -1,4 +1,6 @@
 .details-container, .overview-container {
+    --details-bg-color: #F3F3F3;
+
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -12,7 +14,7 @@
 }
 
 .details-content {
-    background-color: #F3F3F3;
+    background-color: var(--details-bg-color);
     width: 60%;
 }
 
@@ -21,7 +23,7 @@
 }
 
 .toggle-page-prompt {
-    color: #2B55AD;
+    color: var(--text-highlight-color);
 }
 
 .toggle-page-container {
@@ -29,16 +31,23 @@
     align-items: center;
     justify-content: center;
     padding: 10vh 0 10vh 0;
-    background-color: #B6C1D5;
+    background-color: var(--secondary-footer-bg-color);
     width: 100%;
 }
 
 .toggle-page-button {
     display: inline-block;
     padding: 15px 30px;
-    background-color: #2B55AD;
-    color: white;
+    margin: 0;
+    background-color: var(--btn-highlight-color);
+    color: #FFF;
     text-decoration: none;
     border: none;
     cursor: pointer;
+}
+
+@media only screen and (max-width: 899px) {
+    .overview-content, .details-content {
+        width: 90%;
+    }
 }

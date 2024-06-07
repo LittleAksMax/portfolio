@@ -7,14 +7,14 @@ const GreenPyrusLtdDetails: FC = () => {
             <h2>Inventory Manager</h2>
 
             <ul>
-                <li>Frontend using <b>ReactJS</b> with <b>Typescript</b>.</li>
-                <li>Created <b>SDK</b> from scratch by handling using async and promises.</li>
+                <li>Frontend using <strong>ReactJS</strong> with <strong>Typescript</strong>.</li>
+                <li>Created <strong>SDK</strong> from scratch by handling using async and promises.</li>
                 <li>Visualised data taken from the backend into tables created using the <code>react-table</code> module.</li>
 
-                <li>Backend was a REST API using <b>ASP.NET Core</b>.</li>
-                <li>Tested controllers with a <b>TDD</b> approach using <b>xUnit</b> and mocking with <b>Moq</b></li>
-                <li>Created using <b>API key authentication</b> for simplicity (given bespoke nature of software).</li>
-                <li>REST API implemented certain advanced features: <b>filtering</b>, <b>pagination</b>, <b>caching</b> (with <b>Redis</b>)</li>
+                <li>Backend was a REST API using <strong>ASP.NET Core</strong>.</li>
+                <li>Tested controllers with a <strong>TDD</strong> approach using <strong>xUnit</strong> and mocking with <strong>Moq</strong></li>
+                <li>Created using <strong>API key authentication</strong> for simplicity (given bespoke nature of software).</li>
+                <li>REST API implemented certain advanced features: <strong>filtering</strong>, <strong>pagination</strong>, <strong>caching</strong> (with <strong>Redis</strong>)</li>
             </ul>
 
             <h3>Challenges and Learnings</h3>
@@ -29,10 +29,10 @@ const GreenPyrusLtdDetails: FC = () => {
             <p>
                 This was also the largest application I have had to develop up to this point, which meant
                 that a lot of aspects of software development I hadn't considered came
-                up: <b>time management</b>, <b>organisation</b>, and thorough <b>testing</b> (using
-                TDD and <b>Postman</b>). It was also the first time I had to
+                up: <strong>time management</strong>, <strong>organisation</strong>, and thorough <strong>testing</strong> (using
+                TDD and <strong>Postman</strong>). It was also the first time I had to
                 explicitly distinguish between development and production environments, and also had to
-                use <b>Docker</b> to compose a development environment with a database.
+                use <strong>Docker</strong> to compose a development environment with a database.
             </p>
 
             <p>
@@ -43,9 +43,9 @@ const GreenPyrusLtdDetails: FC = () => {
             <h2>Desktop Application</h2>
 
             <ul>
-                <li>Used <b>PyQt5</b> to create an extensible user interface.</li>
-                <li>Connected the STDOUT to a text box in the GUI using <b>threads</b>.</li>
-                <li>Had to adapt pre-existing <b>Python</b> scripts into libraries. These libraries could be invoked from the central application that connected this 'business logic' with the interface.</li>
+                <li>Used <strong>PyQt5</strong> to create an extensible user interface.</li>
+                <li>Connected the STDOUT to a text box in the GUI using <strong>threads</strong>.</li>
+                <li>Had to adapt pre-existing <strong>Python</strong> scripts into libraries. These libraries could be invoked from the central application that connected this 'business logic' with the interface.</li>
                 <li>Optimised the usage of a 3rd party currency exchange rates API by caching records to avoid the request limit.</li>
             </ul>
 
@@ -61,8 +61,8 @@ const GreenPyrusLtdDetails: FC = () => {
             <p>
                 Another challenge of the project was connecting figuring out how to visualise the
                 console output from the pre-existing scripts into the text box on the GUI. The 
-                task called for the usage of threading and using the <b>signals</b> and <b>slots</b> feature
-                of the <b>Qt</b> framework. I implemented it by having a listener thread listened to
+                task called for the usage of threading and using the <strong>signals</strong> and <strong>slots</strong> feature
+                of the <strong>Qt</strong> framework. I implemented it by having a listener thread listened to
                 the logger used and captured the text in it to display in the text box as well.
             </p>
      
@@ -70,9 +70,9 @@ const GreenPyrusLtdDetails: FC = () => {
 
             <ul>
                 <li>Developed a simple Python Lambda that activated on file change in an S3 bucket.</li>
-                <li>Created fine-grained <b>IAM</b> <b>roles</b> and <b>policies</b> using the <i>Principle of Least Privilege</i></li>
-                <li>Integrated a simple <b>CI/CD</b> pipeline using <b>GitHub Actions</b>.</li>
-                <li>Managed versioning of <b>Docker</b> images in <b>ECR</b> (via CI/CD).</li>
+                <li>Created fine-grained <strong>IAM</strong> <strong>roles</strong> and <strong>policies</strong> using the <i>Principle of Least Privilege</i></li>
+                <li>Integrated a simple <strong>CI/CD</strong> pipeline using <strong>GitHub Actions</strong>.</li>
+                <li>Managed versioning of <strong>Docker</strong> images in <strong>ECR</strong> (via CI/CD).</li>
             </ul>
 
             <h3>Challenges and Learnings</h3>
@@ -80,9 +80,9 @@ const GreenPyrusLtdDetails: FC = () => {
             <p>
                 One of the main challenges was efficiently handling and parsing large Excel
                 files without exceeding Lambda's execution time and memory limits.
-                Through this project, I honed my skills in <b>cloud-based architecture</b> and
+                Through this project, I honed my skills in <strong>cloud-based architecture</strong> and
                 got experience with techniques for data processing in a serverless environment.
-                I also got some hands-on experience with using <b>triggers</b> in <b>S3</b> to activate the
+                I also got some hands-on experience with using <strong>triggers</strong> in <strong>S3</strong> to activate the
                 Lambda.
             </p>
         </DetailsTemplate>

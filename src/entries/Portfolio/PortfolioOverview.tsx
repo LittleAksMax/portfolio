@@ -41,7 +41,7 @@ const PortfolioOverview: FC = () => {
                 projects I will build on this website!
             </p>
 
-            <p style={{fontSize: 14}}>NOTE: due to my lack of experience, I took a lot of inspiration from <a href="https://armaizadenwala.com">armaizadenwala.com</a></p>
+            <p>NOTE: due to my lack of experience, I took a lot of inspiration from <a href="https://armaizadenwala.com">armaizadenwala.com</a></p>
 
         </OverviewTemplate>
     );

@@ -8,7 +8,7 @@ const PortfolioDetails: FC = () => {
             <h2>What was this built with?</h2>
 
             <p>
-                I built this website with <b>ReactJS</b> with <b>Typescript</b>.
+                I built this website with <strong>ReactJS</strong> with <strong>Typescript</strong>.
                 I didn't want to use plain HTML and CSS because the components
                 in React allow for easy recycling of existing code. React also
                 allows me to introduce state where I might need it really easily
@@ -16,7 +16,7 @@ const PortfolioDetails: FC = () => {
             </p>
 
             <p>
-                I also deployed the application in an AWS <b>EC2</b> instance.
+                I also deployed the application in an AWS <strong>EC2</strong> instance.
                 The project also required that I purchase a domain under my name,
                 and obtain an SSL certificate to ensure that the traffic is secure.
             </p>
@@ -25,7 +25,7 @@ const PortfolioDetails: FC = () => {
 
             <p>
                 Before this project I had never deployed a live application on the Internet.
-                Learning to <b>register a domain</b>, obtain <b>SSL certificates</b>, and set up a server
+                Learning to <strong>register a domain</strong>, obtain <strong>SSL certificates</strong>, and set up a server
                 in the cloud were entirely new tasks for me. This process provided a practical
                 introduction to web deployment and security, marking a significant step in my
                 development journey as I navigated these essential aspects of making a website

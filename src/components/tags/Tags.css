@@ -1,5 +1,7 @@
 .tags-container {
     flex: 80%;
+    display: flex;
+    flex-flow: row wrap;
     align-items: center;
     padding: 0;
     margin: 0;

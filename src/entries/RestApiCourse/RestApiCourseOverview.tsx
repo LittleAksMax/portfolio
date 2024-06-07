@@ -17,7 +17,7 @@ const RestApiCourseOverview: FC = () => {
             </p>
 
             <p>
-                This course aims to provide an in-depth understanding of <b>RESTful API</b> development,
+                This course aims to provide an in-depth understanding of <strong>RESTful API</strong> development,
                 moving beyond basic CRUD operations to explore advanced features,
                 security measures, and modern architectural patterns along with the best practices
                 associated with all aspects that were touched on.
@@ -26,35 +26,35 @@ const RestApiCourseOverview: FC = () => {
             <h2>Why did I choose this course?</h2>
 
             <p>
-                <b>Practical Application:</b> Through the hands-on nature of the course and
+                <strong>Practical Application:</strong> Through the hands-on nature of the course and
                 I could apply what I learned in a practical context, reinforcing their
                 understanding of the material. I used it to create a template for a REST API
                 that I put in the linked public GitHub repository.
             </p>
 
             <p>
-                <b>Comprehensive Content:</b> The course covers a wide range of topics from
+                <strong>Comprehensive Content:</strong> The course covers a wide range of topics from
                 basic principles to advanced features and best practices, making it a
                 comprehensive guide for REST API development.
             </p>
             <p>
-                <b>Modern Practices:</b> Focus on the latest trends and practices in API
+                <strong>Modern Practices:</strong> Focus on the latest trends and practices in API
                 development, including security, documentation, and minimal APIs, assured
                 to be up-to-date with current industry standards.
             </p>
 
             <p>
-                <b>Enhanced Learning Experience:</b> Beyond basic REST API tutorials you can
+                <strong>Enhanced Learning Experience:</strong> Beyond basic REST API tutorials you can
                 find on YouTube, this course offers a deep dive into complex
-                topics like <b>JWT authentication</b> with claim-based
+                topics like <strong>JWT authentication</strong> with claim-based
                 authorisation, and advanced API features, enriching my learning.
             </p>
 
             <p>
                 This advanced REST API course with a focus on ASP.NET Core offers a robust curriculum
                 that enhanced my skills in designing and implementing sophisticated web services. The course
-                went beyond just REST and went into effective documentation with <b>Swagger</b> and
-                the creation of appropriate <b>SDKs</b>.
+                went beyond just REST and went into effective documentation with <strong>Swagger</strong> and
+                the creation of appropriate <strong>SDKs</strong>.
             </p>
 
             <p>
