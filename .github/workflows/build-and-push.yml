@@ -14,10 +14,10 @@ jobs:
   Generate-Image-Version:
     runs-on: ubuntu-latest
     outputs:
-      image_version: ${{ steps.echo.outputs.test }}
+      image_version: ${{ steps.echo.outputs.version }}
     steps:
       - id: echo
-        run: echo $(date +%s)
+        run: echo "version=v$(date +%s)" >> "$GITHUB_OUTPUT"
   Build-Image:
     runs-on: ubuntu-latest
     needs: Generate-Image-Version
