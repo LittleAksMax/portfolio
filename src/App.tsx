@@ -8,8 +8,12 @@ import ProjectPage from "./components/ProjectPage/ProjectPage";
 import { ProjectType } from "./types";
 import NotFound from "./components/Status/NotFound";
 import Navbar from "./components/Navbar/Navbar";
+import { ProjectPageLinkBuilder } from "./util";
 
 const App: FC = () => {
+    const linkBuilder: ProjectPageLinkBuilder = new ProjectPageLinkBuilder()
+        .setType(":type").setId(":projectId");
+
     return (
         <Router>
             <Routes>
@@ -17,8 +21,8 @@ const App: FC = () => {
                 <Route path={`/${ProjectType.Experiences}`} element={<Experiences />} />
                 <Route path={`/${ProjectType.Projects}`} element={<Projects />} />
                 <Route path={`/${ProjectType.Certifications}`} element={<Certifications />} />
-                <Route path="/dev/:type/:projectId" element={<ProjectPage pageType="overview" />} />
-                <Route path="/dev/:type/:projectId/details" element={<ProjectPage pageType="details" />} />
+                <Route path={linkBuilder.build()} element={<ProjectPage pageType="overview" />} />
+                <Route path={linkBuilder.addDetails().build()} element={<ProjectPage pageType="details" />} />
 
                 <Route path="*" element={<><Navbar /><NotFound /></>} />
             </Routes>

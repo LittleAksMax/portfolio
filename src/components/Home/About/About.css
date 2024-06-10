@@ -13,17 +13,20 @@
 }
 
 .about-section {
-    display: flex;
     width: 100%;
     min-height: 300px;
 }
 
-.about-section-content {
+.dynamic-content {
     display: flex;
-    width: 60%;
-    justify-content: space-between;
     align-items: center;
+    width: 60%;
     margin: 0 auto; /* This centers the div */
+}
+
+.about-section-content, .about-section-experiences {
+    justify-content: space-between;
+
 }
 
 .about-section-content:first-child {
@@ -55,18 +58,29 @@
     color: var(--text-highlight-color);
 }
 
+.about-section-experiences {
+    display: flex;
+    width: 60%;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.about-section-experiences {
+    flex-direction: column;
+}
+
 /* Smaller screens should have slightly different layout */
-@media only screen and (min-width: 900px) and (max-width: 1200px) {
-    .about-section-content {
+@media only screen and (max-width: 1200px) {
+    .dynamic-content {
         width: 90%;
     }
 }
 
 @media only screen and (max-width: 899px) {
-    .about-section-content {
+    .dynamic-content {
+        width: 95%;
         flex-direction: column;
         justify-content: flex-start; /* so they are more compact */
-        width: 90%;
     }
 
     /*

@@ -1,12 +1,19 @@
-import { FC } from "react";
+import { FC, useState } from "react";
 import "./About.css";
 import WhoAmIFrame from "./ImageFrames/WhoAmIFrame";
+import { ProjectListInner } from "../../ProjectList/ProjectList";
+import ProjectRepo from "../../../db/ProjectRepo";
+import { ExperienceState, ProjectState, ProjectType } from "../../../types";
 
 const About: FC = () => {
+    const [experiences] = useState<(ProjectState | ExperienceState)[]>(
+        ProjectRepo.getInstance().getOfType(ProjectType.Experiences)
+    );
+    
     return (
         <div id="about">
             <section id="me" className="about-section odd-section">
-                <div className="about-section-content">
+                <div className="about-section-content dynamic-content">
                     <div className="about-frame-container">
                         <WhoAmIFrame />
                     </div>
@@ -17,7 +24,7 @@ const About: FC = () => {
                 </div>
             </section>
             <section id="interests" className="about-section even-section">
-                <div className="about-section-content">
+                <div className="about-section-content dynamic-content">
                     <div className="about-text">
                         <p>I always seek to learn about new technologies and improve my breadth and quality of my software engineering skills.</p>
                         <p>Outside of my regular university studies, I am looking into <strong>microservices</strong> and <strong>cloud computing</strong> (AWS), <strong>containerisation</strong> (Docker) and <strong>CI/CD</strong> (GitHub actions).</p>
@@ -28,7 +35,7 @@ const About: FC = () => {
                 </div>
             </section>
             <section id="skills" className="about-section odd-section">
-                <div className="about-section-content">
+                <div className="about-section-content dynamic-content">
                     <div className="about-frame-container">
                         <h2 className="about-section-heading">In my Toolbox</h2>                        
                     </div>
@@ -38,6 +45,12 @@ const About: FC = () => {
                         <p><u>Databases:</u> <strong>MariaDB</strong>/<strong>MySQL</strong> (<i>intermediate</i>), <strong>MongoDB</strong> (<i>beginner</i>), <strong>PostgreSQL</strong> (<i>beginner</i>)</p>
                         <p><u>Platforms:</u> <strong>AWS</strong> (IAM, Lambda, EC2, ECR, Secrets Manager) (<i>beginner</i>), <strong>Firebase</strong> (<i>minimal</i>)</p>
                     </div>
+                </div>
+            </section>
+            <section className="about-section">
+                <div className="about-section-experiences dynamic-content">
+                    <h2>Experiences</h2>
+                    <ProjectListInner projects={ experiences } />
                 </div>
             </section>
         </div>

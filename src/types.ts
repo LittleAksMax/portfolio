@@ -23,6 +23,8 @@ export interface ProjectState {
 
 export interface ExperienceState {
     id: string;
+    position: string;
+    summary: string[];
     name: string;
     brief: string;
     tags: string[];

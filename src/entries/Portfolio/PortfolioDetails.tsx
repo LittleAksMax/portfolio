@@ -11,14 +11,14 @@ const PortfolioDetails: FC = () => {
                 I built this website with <strong>ReactJS</strong> with <strong>Typescript</strong>.
                 I didn't want to use plain HTML and CSS because the components
                 in React allow for easy recycling of existing code. React also
-                allows me to introduce state where I might need it really easily
-                with hooks.
+                allows me to introduce state easily (if I require) with hooks.
             </p>
 
             <p>
                 I also deployed the application in an AWS <strong>EC2</strong> instance.
                 The project also required that I purchase a domain under my name,
-                and obtain an SSL certificate to ensure that the traffic is secure.
+                and obtain an SSL certificate (using <a href="https://letsencrypt.org/">Let's Encrypt</a>)
+                to ensure that the traffic is secure.
             </p>
 
             <h2>What did I learn?</h2>
@@ -38,6 +38,21 @@ const PortfolioDetails: FC = () => {
                 fine-graining them until something looks exactly like I wanted it to.
             </p>
 
+            <p>
+                In my second refactor of the project I improved the styling and made use of media queries
+                more liberally to practice <strong>responsive web design</strong>. I also made sure to consolidate some of the
+                knowledge I learned from my <a href="https://warwick.ac.uk/fac/sci/dcs/teaching/modules/cs139/">Web Development Technologies module (CS139)</a> regarding <strong>accessibility</strong> in websites, by attempting to cover a variety of screen sizes
+                and using <strong>semantic HTML</strong> where appropriate.
+            </p>
+
+            <p>
+                I realised after the first time that I deployed the portfolio manually that it was a tiresome process.
+                I took the opportunity to hone my CI/CD skills (as it is one of my interests right now). I
+                set up a <strong>CI/CD pipeline</strong> to deploy the project to my EC2 instance. This also
+                allowed me to practice standard security practices in cloud service management (such as strictly
+                enforcing the principle of least privilege among access keys, roles, users utilised). 
+            </p>
+
             <h2>What were the Biggest Challenges?</h2>
 
             <SubprojectDefinition title="Consistent Styling">
@@ -46,7 +61,7 @@ const PortfolioDetails: FC = () => {
                     people's attention. A lot of my time went into figuring out which
                     colours to use.
                     Another key aspect was deciding which font suits the style of the
-                    website most (I went with <i>Roboto</i>).
+                    website most (I went with <a href="https://fonts.google.com/specimen/Roboto">Roboto</a>).
                 </p>
             </SubprojectDefinition>
 
@@ -61,6 +76,20 @@ const PortfolioDetails: FC = () => {
                     The structure of the website had to be logical and easy to follow.
                     A simple way I achieved this was to keep the styling minimalistic
                     to keep the website effectively static.
+                </p>
+            </SubprojectDefinition>
+
+            <SubprojectDefinition title="Effective CI/CD">
+                <p>
+                    Making the change from manual deployment to a pipeline that
+                    automatically deploys my code to a remote server was a new
+                    concept to me, and therefore a great challenge.
+                    Despite it's difficulty it was a fun and educational
+                    experience.
+                    I had to familiarise myself
+                    with <strong>GitHub Actions</strong> and the best practices
+                    for managing access keys, which I had delved too deep into
+                    at this point.
                 </p>
             </SubprojectDefinition>
         </DetailsTemplate>

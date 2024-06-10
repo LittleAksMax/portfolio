@@ -35,6 +35,9 @@ const Footer: FC = () => {
                     <span className="footer-link">
                         <a href="/experiences">Experiences</a>
                     </span>
+                    <span className="footer-link">
+                        <a href="/certifications">Courses and Certifications</a>
+                    </span>
                 </div>
                 <div className="footer-link-column">
                     <div className="footer-link-column-heading">

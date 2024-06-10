@@ -1,7 +1,7 @@
 import { FC } from "react";
 import Banner from "../Banner";
 import Tags from "../../tags/Tags";
-import ExperienceDates from "./ExperienceDates";
+import { ExperienceDates } from "../../ExperienceDates/ExperienceDates";
 import "./SpecialisedBanner.css";
 
 interface ExperienceBannerProps {
