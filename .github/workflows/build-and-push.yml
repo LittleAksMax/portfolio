@@ -14,10 +14,28 @@ jobs:
   Generate-Image-Version:
     runs-on: ubuntu-latest
     outputs:
-      image_version: ${{ steps.echo.outputs.version }}
+      image_version: ${{ steps.echo.outputs.VERSION }}
     steps:
       - id: echo
-        run: echo "version=v$(date +%s)" >> "$GITHUB_OUTPUT"
+        run: |
+          # Fetch all tags
+          git fetch --tags
+          
+          # Extract latest tag, if any
+          TAG=$(git describe --tags $(git rev-list --tags --max-count=1))
+          
+          # If there are no tags, use a default version
+          if [ -z "$TAG" ]; then
+            VERSION="1.1.0"
+          else
+            # Generate the new version based on the last tag
+            IFS='.' read -r -a PARTS <<< "$TAG"
+            PARTS[2]=$((PARTS[2]+1))
+            VERSION="${PARTS[0]}.${PARTS[1]}.${PARTS[2]}"
+          fi
+  
+          echo "VERSION=$VERSION" >> $GITHUB_ENV
+          echo "Generated version: $VERSION"
   Build-Image:
     runs-on: ubuntu-latest
     needs: Generate-Image-Version
