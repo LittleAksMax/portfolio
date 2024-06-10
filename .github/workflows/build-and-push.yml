@@ -1,0 +1,45 @@
+name: Docker Image CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+env:
+  IMAGE_NAME: davidrosental-portfolio
+  ECR_REPOSITORY_URL: 854241377966.dkr.ecr.eu-west-2.amazonaws.com/davidrosental-portfolio
+
+jobs:
+  Generate-Image-Version:
+    runs-on: ubuntu-latest
+    outputs:
+      image_version: ${{ steps.echo.outputs.test }}
+    steps:
+      - id: echo
+        run: echo $(date +%s)
+  Build-Image:
+    runs-on: ubuntu-latest
+    needs: Generate-Image-Version
+    steps:
+    - uses: actions/checkout@v4
+    - name: Build the Docker image
+      run: |
+        docker build . -f Dockerfile -t $IMAGE_NAME:${{needs.Generate-Image-Version.outputs.image_version}}
+        docker tag $IMAGE_NAME:${{needs.Generate-Image-Version.outputs.image_version}} $IMAGE_NAME:latest
+
+  Push-To-ECR:
+    runs-on: ubuntu-latest
+    needs: [Generate-Image-Version, Build-Image]
+    steps:
+      - name: Login to ECR
+        id: ecr
+        uses: jwalton/gh-ecr-login@v3
+        with:
+          access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          region: eu-west-2
+      - name: Push to ECR
+        run: |
+          docker tag $IMAGE_NAME:${{needs.Generate-Image-Version.outputs.image_version}} $ECR_REPOSITORY_URL:${{needs.Generate-Image-Version.outputs.image_version}}
+          docker push $ECR_REPOSITORY_URL:${{needs.Generate-Image-Version.outputs.image_version}}
