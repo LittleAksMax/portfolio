@@ -26,15 +26,27 @@ class ProjectRepo {
             if (entry["type"] === ProjectType.Experiences) {
                 const experienceEntry: ExperienceState = {
                     ...entryState,
+                    position: entry["position"] ?? "",
+                    summary: entry["summary"] ?? [],
                     started: entry["started"] ?? "",
                     ended: entry["ended"] ?? ""
                 };
 
+                if (entry["summary"] === undefined) {
+                    logging.warn("ProjectRepo", `'summary' field for entry id: ${entry["id"]} is undefined`, entry);
+                } else if (!Array.isArray(entry["summary"])) {
+                    logging.warn("ProjectRepo", `'summary' field for entry id: ${entry["id"]} is not an array`, entry);
+                } else if (entry["summary"].length === 0) {
+                    logging.warn("ProjectRepo", `'summary' field for entry id: ${entry["id"]} is an empty array`, entry);
+                }
+                if (entry["position"] === undefined) {
+                    logging.warn("ProjectRepo", `'position' field for entry id: ${entry["id"]} is undefined`, entry);
+                }
                 if (entry["started"] === undefined) {
-                    logging.warn("ProjectRepo", `'started' field for entry id: ${entry["id"]}is undefined`, entry);
+                    logging.warn("ProjectRepo", `'started' field for entry id: ${entry["id"]} is undefined`, entry);
                 }
                 if (entry["ended"] === undefined) {
-                    logging.warn("ProjectRepo", `'ended' field for entry id: ${entry["id"]}is undefined`, entry);
+                    logging.warn("ProjectRepo", `'ended' field for entry id: ${entry["id"]} is undefined`, entry);
                 }
 
                 return experienceEntry;

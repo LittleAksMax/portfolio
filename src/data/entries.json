@@ -7,8 +7,8 @@
     "entries": [
         {
             "id": "aws-fundamentals-course",
-            "name": "AWS Fundamentals with C#",
-            "brief": "AWS Fundamentals Course by Nick Chapsas",
+            "name": "Cloud Fundamentals: AWS Services for C# Developers",
+            "brief": "An introduction to the basic AWS services presented by Nick Chapsas",
             "tags": [
                 "AWS",
                 "C#",
@@ -25,8 +25,16 @@
         },
         {
             "id": "greenpyrus-ltd",
-            "name": "Part-time Junior Software Developer at GreenPyrus Ltd.",
+            "position": "Junior Software Developer (Part-Time)",
+            "name": "GreenPyrus Ltd.",
             "brief": "Creating intuitive interfaces for desktop applications and data management.",
+            "summary": [
+                "Developed a suite of bespoke utility software to automate menial tasks to improve productivity. Created an intuitive UI with PyQt5 to make use of the library.",
+                "Designed a database to hold the company’s inventory data and currency exchange rates (as a cache), making up time for senior employees due to the API’s timeout used APIs request limit.",
+                "Implemented a REST API using ASP.NET Core to interact with the data through a standard interface. Also created a corresponding frontend with React and Typescript to visualise the data in a simple, tabular form and make edits to inventory data simple.",
+                "Basic TDD with xUnit and mocking with Moq for unit testing.",
+                "Created an AWS Lambda to automatically update the database when there was a change to inventory Excel files in an Amazon S3 bucket, to create an alternative interface to access inventory data."
+            ],
             "tags": [
                 "Python",
                 "MariaDb",
@@ -47,19 +55,6 @@
             "type": "experiences",
             "started": "Mar 2021",
             "ended": "Sep 2023"
-        },
-        {
-            "id": "jwt-by-hand",
-            "name": "JWT by hand",
-            "brief": "An implementation of JSON Web Token authorisation.",
-            "tags": [
-                "JS",
-                "TS",
-                "JWT"
-            ],
-            "type": "projects",
-            "access": null,
-            "source": "https://github.com/LittleAksMax/jwt-by-hand.git"
         },
         {
             "id": "portfolio",
@@ -83,8 +78,8 @@
         },
         {
             "id": "rest-api-course",
-            "name": "REST API Course with C#",
-            "brief": "Creating robust REST APIs with ASP.NET Core with C# by Nick Chapsas",
+            "name": "From Zero to Hero: REST APIs in .NET",
+            "brief": "Deep dive into creating robust and fully-equipped REST APIs presented by Nick Chapsas",
             "tags": [
                 "C#",
                 "REST",
@@ -99,6 +94,17 @@
             "type": "certifications",
             "access": null,
             "source": "https://github.com/LittleAksMax/aspnet-rest-template.git"
+        },
+        {
+            "id": "docker-course",
+            "name": "From Zero to Hero: Docker for Developers",
+            "brief": "An introduction to effectively utilising Docker and fundamental Docker concepts presented by Dan Clarke",
+            "tags": [
+                "Docker"
+            ],
+            "type": "certifications",
+            "access": null,
+            "source": null
         }
     ]
 }

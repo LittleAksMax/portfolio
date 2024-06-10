@@ -2,12 +2,12 @@ import AwsFundamentalsCSharpOverview from "./AwsFundamentalsCSharp/AwsFundamenta
 import AwsFundamentalsCSharpDetails from "./AwsFundamentalsCSharp/AwsFundamentalsCSharpDetails";
 import GreenPyrusLtdOverview from "./GreenPyrusLtd/GreenPyrusLtdOverview";
 import GreenPyrusLtdDetails from "./GreenPyrusLtd/GreenPyrusLtdDetails";
-import JwtByHandDetails from "./JwtByHand/JwtByHandDetails";
-import JwtByHandOverview from "./JwtByHand/JwtByHandOverview";
 import RestApiCourseOverview from "./RestApiCourse/RestApiCourseOverview";
 import RestApiCourseDetails from "./RestApiCourse/RestApiCourseDetails";
 import PortfolioOverview from "./Portfolio/PortfolioOverview";
 import PortfolioDetails from "./Portfolio/PortfolioDetails";
+import DockerCourseOverview from "./DockerCourse/DockerCourseOverview";
+import DockerCourseDetails from "./DockerCourse/DockerCourseDetails";
 
 const EntriesMap = {
     "aws-fundamentals-course": {
@@ -18,10 +18,6 @@ const EntriesMap = {
         overview: <GreenPyrusLtdOverview />,
         details: <GreenPyrusLtdDetails />
     },
-    "jwt-by-hand": {
-        overview: <JwtByHandOverview />,
-        details: <JwtByHandDetails />
-    },
     "rest-api-course": {
         overview: <RestApiCourseOverview />,
         details: <RestApiCourseDetails />
@@ -29,6 +25,10 @@ const EntriesMap = {
     "portfolio": {
         overview: <PortfolioOverview />,
         details: <PortfolioDetails />
+    },
+    "docker-course": {
+        overview: <DockerCourseOverview />,
+        details: <DockerCourseDetails />
     }
 };
 
