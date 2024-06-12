@@ -55,12 +55,12 @@ const AwsFundamentalsCSharpDetails: FC = () => {
                 <li>Introduction to <strong>partition keys</strong> and <strong>sort keys</strong>.</li>
                 <li>Basic table management and CRUD using DynamoDB.</li>
                 <li>Integrating DynamoDB with an existing Web API.</li>
-                <li><strong>Scanning</strong> (and why it is inefficient).</li>
-                <li><strong>Conditional operations</strong>.</li>
-                <li>Transactions in DynamoDB.</li>
-                <li>Introduction to <strong>secondary indices</strong> and creating and using a <strong>global/local secondary index</strong>.</li>
-                <li>DynamoDB <strong>Streams</strong></li>
-                <li>Introduction to <strong>autoscaling</strong>.</li>
+                <li><strong>Scanning</strong> (and why it is inefficient and expensive).</li>
+                <li><strong>Conditional operations</strong> and mixed conditional operations (in the context of ensuring unique partition keys and preventing race conditions caused by concurrent access).</li>
+                <li><strong>Transactions</strong> in DynamoDB as well as demonstration of cross-table transacion support.</li>
+                <li>Introduction to <strong>secondary indices</strong> and creating and using a <strong>global/local secondary index</strong> as a way to support evolving access patterns in our DynamoDB tables (and how they come at a great cost as they work by cloning the tables under-the-hood).</li>
+                <li>DynamoDB <strong>streams</strong> and how they can be used to trigger processing with a Lambda on modification.</li>
+                <li>Introduction to <strong>autoscaling</strong> as a way to scale throughput much more closely with utilised capacity and reduce cost. Also touched on how <strong>on-demand capacity</strong> is more efficient for capacity needs with frequent, unpredictable spikes (and otherwise flat).</li>
             </ul>
 
             <h3>Lambda</h3>
