@@ -8,7 +8,7 @@ const PortfolioDetails: FC = () => {
             <h2>What was this built with?</h2>
 
             <p>
-                I built this website with <strong>ReactJS</strong> with <strong>Typescript</strong>.
+                I built this website with <strong>React</strong> with <strong>Typescript</strong>.
                 I didn't want to use plain HTML and CSS because the components
                 in React allow for easy recycling of existing code. React also
                 allows me to introduce state easily (if I require) with hooks.
@@ -47,10 +47,13 @@ const PortfolioDetails: FC = () => {
 
             <p>
                 I realised after the first time that I deployed the portfolio manually that it was a tiresome process.
-                I took the opportunity to hone my CI/CD skills (as it is one of my interests right now). I
-                set up a <strong>CI/CD pipeline</strong> to deploy the project to my EC2 instance. This also
+                I took the opportunity to hone my CI skills (as it is one of my interests right now). I
+                set up a <strong>CI pipeline</strong> to push the Docker image to an ECR repository. This also
                 allowed me to practice standard security practices in cloud service management (such as strictly
-                enforcing the principle of least privilege among access keys, roles, users utilised). 
+                enforcing the principle of least privilege among access keys, roles, users utilised).
+
+                I could not set up a CD part of the pipeline because my application is deployed on a single EC2 server.
+                This means that you need to be SSH'd into the server to pull the image and run it in a container. 
             </p>
 
             <h2>What were the Biggest Challenges?</h2>
@@ -79,17 +82,15 @@ const PortfolioDetails: FC = () => {
                 </p>
             </SubprojectDefinition>
 
-            <SubprojectDefinition title="Effective CI/CD">
+            <SubprojectDefinition title="Effective CI">
                 <p>
-                    Making the change from manual deployment to a pipeline that
-                    automatically deploys my code to a remote server was a new
+                    Making the change from total manual deployment to a pipeline that
+                    automatically packages my code and stores it in a remote repository was a new
                     concept to me, and therefore a great challenge.
                     Despite it's difficulty it was a fun and educational
                     experience.
-                    I had to familiarise myself
-                    with <strong>GitHub Actions</strong> and the best practices
-                    for managing access keys, which I had delved too deep into
-                    at this point.
+                    I had to familiarise myself with <strong>GitHub Actions</strong> and
+                    the best practices for managing access keys (as opposed to STS and Roles).
                 </p>
             </SubprojectDefinition>
         </DetailsTemplate>

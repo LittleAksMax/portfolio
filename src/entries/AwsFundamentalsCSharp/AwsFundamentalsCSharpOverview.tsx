@@ -64,6 +64,15 @@ const AwsFundamentalsCSharpOverview: FC = () => {
                 concepts that are present in every major cloud platform.
             </p>
 
+            <p>
+                My only real issue with the course is that it doesn't look into the best practices
+                for how the credentials for the services should be managed in a more formal way.
+                The course just uses credentials based on a root user, which is clearly not the
+                safest method for managing services. However, this flaw in the course is understandable
+                since IAM was not in the scope of the course (although I did end up looking into
+                how the IAM system works out of interest).
+            </p>
+
             <Certification src={ "/AWS-Cert.png" } />
         </OverviewTemplate>
     );
