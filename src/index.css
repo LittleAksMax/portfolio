@@ -36,3 +36,7 @@ h2 {
 strong {
     color: var(--text-highlight-color);
 }
+
+a:hover {
+    text-decoration: underline;
+}
