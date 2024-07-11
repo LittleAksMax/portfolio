@@ -13,6 +13,10 @@
     z-index: 1000; /* stay above everything else */
 }
 
+#navbar li:hover {
+    border-bottom: 1px solid var(--text-highlight-color);
+}
+
 #left-navbar {
     display: inline-flex;
     flex-direction: row;

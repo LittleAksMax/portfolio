@@ -10,65 +10,69 @@ import ExperienceBanner from "../Banner/ProjectBanner/ExperienceBanner";
 import ProjectContents from "./ProjectContents";
 
 const createBanner = (
-    projectType: ProjectType,
-    project: ProjectState | ExperienceState
+  projectType: ProjectType,
+  project: ProjectState | ExperienceState
 ) => {
-    if (projectType === ProjectType.Experiences) {
-        return (
-            <ExperienceBanner
-                projectName={project.name}
-                projectSubtitle={project.brief}
-                started={(project as ExperienceState).started}
-                ended={(project as ExperienceState).ended}
-                tags={project.tags}
-            />
-        );
-    } else {
-        return (
-            <ProjectBanner
-                projectName={project.name}
-                projectSubtitle={project.brief}
-                sourceUrl={(project as ProjectState).source}
-                accessUrl={(project as ProjectState).access}
-                tags={project.tags}
-            />
-        );
-    }
-}
+  if (projectType === ProjectType.Experiences) {
+    return (
+      <ExperienceBanner
+        projectName={project.name}
+        projectSubtitle={project.brief}
+        started={(project as ExperienceState).started}
+        ended={(project as ExperienceState).ended}
+        tags={project.tags}
+      />
+    );
+  } else {
+    return (
+      <ProjectBanner
+        projectName={project.name}
+        projectSubtitle={project.brief}
+        sourceUrl={(project as ProjectState).source}
+        accessUrl={(project as ProjectState).access}
+        tags={project.tags}
+      />
+    );
+  }
+};
 
 interface ProjectPageProps {
-    pageType: "overview" | "details";
+  pageType: "overview" | "details";
 }
 
-export const ProjectPage: FC<ProjectPageProps> = ({ pageType }: ProjectPageProps) => {
-    const { type, projectId } = useParams();
+export const ProjectPage: FC<ProjectPageProps> = ({
+  pageType,
+}: ProjectPageProps) => {
+  const { type, projectId } = useParams();
 
-    // ensure type route parameter is valid
-    if ((ProjectType.Certifications !== type &&
-        ProjectType.Experiences !== type &&
-        ProjectType.Projects !== type) ||
-        projectId === undefined ||
-        projectId === null) {
-        return <NotFound />;
-    }
+  // ensure type route parameter is valid
+  if (
+    (ProjectType.Certifications !== type &&
+      ProjectType.Experiences !== type &&
+      ProjectType.Projects !== type) ||
+    projectId === undefined ||
+    projectId === null
+  ) {
+    return <NotFound />;
+  }
 
-    const project = ProjectRepo.getInstance().getProjectById(projectId);
+  const project = ProjectRepo.getInstance().getProjectById(projectId);
 
-    // project must exist
-    if (project === null) {
-        return <NotFound />;
-    }
+  // project must exist
+  if (project === null) {
+    return <NotFound />;
+  }
 
-    const overviewPage = EntriesMap[projectId].overview;
-    const detailsPage = EntriesMap[projectId].details;
+  const overviewPage = EntriesMap[projectId].overview;
+  const detailsPage = EntriesMap[projectId].details;
 
-    return (
-        <Page banner={createBanner(type, project)}>
-            <ProjectContents>
-                { pageType === "overview" ? overviewPage : detailsPage}
-            </ProjectContents>
-        </Page>
-    );
+  return (
+    <Page banner={createBanner(type, project)}>
+      <ProjectContents>
+        {pageType === "overview" ? overviewPage : detailsPage}
+      </ProjectContents>
+    </Page>
+  );
 };
 
 export default ProjectPage;
