@@ -1,40 +1,21 @@
 #navbar {
-    font-family: Hack, monospace;
-    font-size: 20px;
-    height: 60px;
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    overflow: hidden;
-    margin: 0;
-    background-color: var(--navbar-bg-color);
-
-    z-index: 1000; /* stay above everything else */
-}
-
-#navbar li:hover {
-    border-bottom: 1px solid var(--text-highlight-color);
-}
-
-#left-navbar {
-    display: inline-flex;
-    flex-direction: row;
-    float: left;
-}
-
-#right-navbar {
-    display: inline-flex;
-    flex-direction: row;
-    float: right;
-    padding-right: 50px;
+  font-family: Hack, monospace;
+  font-size: 20px;
+  height: 60px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  margin: 0;
+  background-color: var(--navbar-bg-color);
+  z-index: 1000; /* stay above everything else */
 }
 
 #navbar li > a {
-    display: block;
-    color: var(--text-highlight-color);
-    font-family: monospace;
-    text-align: center;
-    padding: 20px 10px;
-    text-decoration: none;
+  display: block;
+  color: var(--text-highlight-color);
+  font-family: monospace;
+  text-align: center;
+  padding: 20px 10px;
+  text-decoration: none;
 }
