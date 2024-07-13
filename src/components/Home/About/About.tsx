@@ -46,7 +46,7 @@ const About: FC = () => {
               <strong>microservices</strong> and{" "}
               <strong>cloud computing</strong> (AWS),{" "}
               <strong>containerisation</strong> (Docker) and{" "}
-              <strong>CI/CD</strong> (GitHub actions).
+              <strong>CI/CD</strong> (with GitHub actions).
             </p>
           </div>
           <div className="about-frame-container">

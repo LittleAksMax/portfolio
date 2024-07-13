@@ -1,4 +1,4 @@
-import { FC, Children, ReactNode, ReactElement } from "react";
+import { FC, ReactNode, ReactElement } from "react";
 import Navbar from "../Navbar/Navbar";
 import Banner from "../Banner/Banner";
 import ProjectBanner from "../Banner/ProjectBanner/ProjectBanner";
