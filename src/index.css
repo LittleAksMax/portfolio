@@ -36,3 +36,8 @@ h2 {
 strong {
     color: var(--text-highlight-color);
 }
+
+p {
+    text-align: justify;
+    text-justify: inter-word;
+}

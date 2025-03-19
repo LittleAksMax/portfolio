@@ -105,6 +105,30 @@
             "type": "certifications",
             "access": null,
             "source": null
+        },
+        {
+            "id": "cs261-junction-modeller",
+            "name": "Junction Modeller (Group Project Coursework)",
+            "brief": "Software used to evaluate different configurations of traffic junctions defined by the user.",
+            "tags": [
+                "Java",
+                "Java Swing",
+                "JavaFX",
+                "Junit",
+                "Mockito",
+                "HTML",
+                "CSS",
+                "Jekyll",
+                "Bootstrap",
+                "AI",
+                "Agile",
+                "Scrum",
+                "CI",
+                "Github Actions"
+            ],
+            "type": "projects",
+            "access": "https://cs261-group.github.io/junction-modeller/",
+            "source": null
         }
     ]
 }
