@@ -6,8 +6,9 @@ const CS261Details: FC = () => {
   return (
     <DetailsTemplate showOverviewPrompt="Take a look at the overview of this project">
       <p>
-        Unfortunately, since this is a coursework project, I am not free to
-        share the source code, which is kept in a private Github repository.
+        Unfortunately, since this is a university coursework project, I am not
+        free to share the source code, which is kept in a private Github
+        repository.
       </p>
       <p>
         Also, just for context: the term the project was developed in is 10
