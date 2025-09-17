@@ -1,0 +1,11 @@
+.video-embed {
+    width: 600px;
+}
+
+.video-group {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+    justify-content: center;
+}
