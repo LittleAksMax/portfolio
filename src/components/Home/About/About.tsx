@@ -3,11 +3,11 @@ import "./About.css";
 import WhoAmIFrame from "./ImageFrames/WhoAmIFrame";
 import { ProjectListInner } from "../../ProjectList/ProjectList";
 import ProjectRepo from "../../../db/ProjectRepo";
-import { ExperienceState, ProjectState, ProjectType } from "../../../types";
+import { ExperienceState, ProjectType } from "../../../types";
 
 const About: FC = () => {
-  const [experiences] = useState<(ProjectState | ExperienceState)[]>(
-    ProjectRepo.getInstance().getOfType(ProjectType.Experiences)
+  const [experiences] = useState<ExperienceState[]>(
+    ProjectRepo.getInstance().getOfType(ProjectType.Experiences) as ExperienceState[]
   );
 
   return (
@@ -21,15 +21,14 @@ const About: FC = () => {
             <h2 className="about-section-heading">Who I am</h2>
             <p>
               Hello, I'm <strong>David Rosental</strong>, a computer science
-              student at the <strong>University of Warwick</strong>. I started
-              in September 2023, so I am in my 2nd year of my{" "}
+              student at the <strong>University of Warwick</strong>. I am in my 3rd year of my{" "}
               <a href="https://warwick.ac.uk/fac/sci/dcs/teaching/courses/">
                 <strong>4 year MEng course</strong>
               </a>
               .
             </p>
             <p>
-              <a href="/David Rosental.pdf">Here is a link to my current CV</a>.
+              <a href="/David_Rosental_CV.pdf">Here is my current CV</a>.
             </p>
           </div>
         </div>
@@ -43,10 +42,9 @@ const About: FC = () => {
             </p>
             <p>
               Outside of my regular university studies, I am looking into{" "}
-              <strong>microservices</strong> and{" "}
-              <strong>cloud computing</strong> (AWS),{" "}
-              <strong>containerisation</strong> (Docker) and{" "}
-              <strong>CI/CD</strong> (with GitHub actions).
+              <strong>cloud computing</strong> and <strong>DevOps</strong>. I am
+              also interested in <strong>data analytics</strong> and{" "}
+              <strong>GNN recommendation systems</strong>.
             </p>
           </div>
           <div className="about-frame-container">
@@ -65,8 +63,8 @@ const About: FC = () => {
               <strong>Java</strong> (<i>intermediate</i>), <strong>C#</strong> (
               <i>intermediate</i>), <strong>Javascript/Typescript</strong> (
               <i>intermediate</i>), <strong>C</strong>/<strong>C++</strong> (
-              <i>beginner</i>), <strong>HTML</strong>/<strong>CSS</strong>/
-              <strong>JS</strong> (<i>beginner</i>)
+              <i>intermediate</i>), <strong>HTML</strong>/<strong>CSS</strong>/
+              <strong>JS</strong> (<i>beginner</i>), <strong>Go</strong> (<i>beginner</i>)
             </p>
             <p>
               <u>Frameworks:</u> <strong>ASP.NET Core</strong> (
@@ -75,9 +73,9 @@ const About: FC = () => {
               (<i>beginner</i>)
             </p>
             <p>
-              <u>Databases:</u> <strong>MariaDB</strong>/<strong>MySQL</strong>{" "}
+              <u>Databases:</u> <strong>PostgreSQL</strong>{" "}
               (<i>intermediate</i>), <strong>MongoDB</strong> (<i>beginner</i>),{" "}
-              <strong>PostgreSQL</strong> (<i>beginner</i>)
+              <strong>MariaDB</strong>/<strong>MySQL</strong> (<i>beginner</i>)
             </p>
             <p>
               <u>Platforms:</u> <strong>AWS</strong> (IAM, Lambda, EC2, ECR,

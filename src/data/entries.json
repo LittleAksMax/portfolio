@@ -6,6 +6,57 @@
     ],
     "entries": [
         {
+            "id": "cs310-bsc-project",
+            "name": "Recommendation System for BSc Individual Project",
+            "brief": "Top-k Item-Centric Product Recommendations on Co-Purchasing Data using Graph Neural Networks",
+            "tags": [
+                "Python",
+                "PyTorch",
+                "Graph Neural Networks",
+                "GNNs",
+                "Machine Learning",
+                "Data Science",
+                "Data Analytics",
+                "Pandas",
+                "NumPy",
+                "Matplotlib",
+                "Scikit-learn",
+                "Go",
+                "Gin-Gonic",
+                "Neo4j",
+                "Postgres"
+            ],
+            "type": "projects",
+            "access": null,
+            "source": null
+        },
+                {
+            "id": "vectric",
+            "position": "Software Engineer Intern (Full-Time)",
+            "name": "Vectric",
+            "brief": "Developing toolpath for High-Speed Machining of 2D Pockets in CNC.",
+            "summary": [
+                "Developed WebSocket-based communication with CNC machines using the Web Serial API (Javascript), enabling real-time manual/script-based control via web browser using G-code.",
+                "Built an interactive toolpath visualiser (React + Three.js) for 3D simulation and debugging of G-code scripts.",
+                "Implemented spiral pocketing toolpath algorithm (C++) for high-speed pocket machining, significantly reducing machining time."
+            ],
+            "tags": [
+                "C/C++",
+                "Javascript",
+                "Typescript",
+                "ReactJS",
+                "Raylib",
+                "Maths",
+                "Linear Algebra",
+                "Graphics",
+                "CNC",
+                "CAM"
+            ],
+            "type": "experiences",
+            "started": "Jun 2025",
+            "ended": "Sep 2025"
+        },
+        {
             "id": "aws-fundamentals-course",
             "name": "Cloud Fundamentals: AWS Services for C# Developers",
             "brief": "An introduction to the basic AWS services presented by Nick Chapsas",

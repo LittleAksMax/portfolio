@@ -10,32 +10,44 @@ import DockerCourseOverview from "./DockerCourse/DockerCourseOverview";
 import DockerCourseDetails from "./DockerCourse/DockerCourseDetails";
 import CS261Overview from "./CS261SoftwareEngineeringGroupProject/CS261Overview";
 import CS261Details from "./CS261SoftwareEngineeringGroupProject/CS261Details";
+import GNNRecommendationsDetails from "./GNNRecommendations/GNNRecommendationsDetails";
+import GNNRecommendationsOverview from "./GNNRecommendations/GNNRecommendationsOverview";
+import VectricOverview from "./Vectric/VectricOverview";
+import VectricDetails from "./Vectric/VectricDetails";
 
 const EntriesMap = {
-    "aws-fundamentals-course": {
-        overview: <AwsFundamentalsCSharpOverview />,
-        details: <AwsFundamentalsCSharpDetails />
-    },
-    "greenpyrus-ltd": {
-        overview: <GreenPyrusLtdOverview />,
-        details: <GreenPyrusLtdDetails />
-    },
-    "rest-api-course": {
-        overview: <RestApiCourseOverview />,
-        details: <RestApiCourseDetails />
-    },
-    "portfolio": {
-        overview: <PortfolioOverview />,
-        details: <PortfolioDetails />
-    },
-    "docker-course": {
-        overview: <DockerCourseOverview />,
-        details: <DockerCourseDetails />
-    },
-    "cs261-junction-modeller": {
-        overview: <CS261Overview />,
-        details: <CS261Details />
-    }
+  "aws-fundamentals-course": {
+    overview: <AwsFundamentalsCSharpOverview />,
+    details: <AwsFundamentalsCSharpDetails />,
+  },
+  "greenpyrus-ltd": {
+    overview: <GreenPyrusLtdOverview />,
+    details: <GreenPyrusLtdDetails />,
+  },
+  "rest-api-course": {
+    overview: <RestApiCourseOverview />,
+    details: <RestApiCourseDetails />,
+  },
+  portfolio: {
+    overview: <PortfolioOverview />,
+    details: <PortfolioDetails />,
+  },
+  "docker-course": {
+    overview: <DockerCourseOverview />,
+    details: <DockerCourseDetails />,
+  },
+  "cs261-junction-modeller": {
+    overview: <CS261Overview />,
+    details: <CS261Details />,
+  },
+  "cs310-bsc-project": {
+    overview: <GNNRecommendationsOverview />,
+    details: <GNNRecommendationsDetails />,
+  },
+  "vectric": {
+    overview: <VectricOverview />,
+    details: <VectricDetails />,
+  },
 };
 
 export default EntriesMap;
